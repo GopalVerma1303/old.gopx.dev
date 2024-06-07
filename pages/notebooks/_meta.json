@@ -1,0 +1,29 @@
+{
+  "index": "Introduction",
+  "codeofconduct": "Code of Counduct",
+  "guide": "",
+  "templates": "Templates",
+  "-- Projects": {
+    "type": "separator",
+    "title": "Projects"
+  },
+  "applications": "Applications",
+  "packages": "Packages",
+  "sdks": "SDKs",
+  "-- More": {
+    "type": "separator",
+    "title": "More"
+  },
+  "blog-link": {
+    "title": "Blogs ↗",
+    "href": "/blog"
+  },
+  "showcase-link": {
+    "title": "Showcase ↗",
+    "href": "/showcase"
+  },
+  "about-link": {
+    "title": "About us ↗",
+    "href": "/about"
+  }
+}

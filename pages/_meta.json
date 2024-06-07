@@ -1,0 +1,43 @@
+{
+  "index": {
+    "type": "page",
+    "title": "Gopal Verma",
+    "display": "hidden",
+    "theme": {
+      "layout": "raw"
+    }
+  },
+  "notebooks": {
+    "type": "page",
+    "title": "Notebooks"
+  },
+  "blogs": {
+    "type": "page",
+    "title": "Blogs",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "showcase": {
+    "type": "page",
+    "title": "Showcase",
+    "theme": {
+      "typesetting": "article",
+      "layout": "full"
+    }
+  },
+  "about": {
+    "type": "page",
+    "title": "About",
+    "theme": {
+      "typesetting": "article"
+    }
+  },
+  "404": {
+    "type": "page",
+    "theme": {
+      "timestamp": false,
+      "typesetting": "article"
+    }
+  }
+}

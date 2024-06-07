@@ -1,0 +1,158 @@
+import { useRouter } from "next/router";
+import type { DocsThemeConfig } from "nextra-theme-docs";
+import { useConfig } from "nextra-theme-docs";
+import Image from "next/image";
+import { GitHubIcon, TwitterXIcon, DiscordIcon } from "@/components/icons";
+import SOCIAL_MEDIA_LINKS from "@/content/social-media";
+import LOGO_FOR_DARK from "@/public/personal/full-white-bg-trans.png";
+import LOGO_FOR_LIGHT from "@/public/personal/full-black-bg-trans.png";
+import Logo from "@/components/Logo";
+
+const logo = (
+  <>
+    <Logo name="@bettercallgopal" initials="GV" />
+  </>
+);
+
+const config: DocsThemeConfig = {
+  project: {
+    link: SOCIAL_MEDIA_LINKS.github_cds.link,
+    icon: <GitHubIcon />,
+  },
+  chat: {
+    link: SOCIAL_MEDIA_LINKS.discord.link,
+    icon: <DiscordIcon />,
+  },
+  docsRepositoryBase:
+    SOCIAL_MEDIA_LINKS.github_cds_website_docsRepositoryBase.link,
+  useNextSeoProps() {
+    const { asPath } = useRouter();
+    if (asPath !== "/") {
+      return {
+        titleTemplate: "%s - CDS",
+      };
+    }
+  },
+  logo,
+  head: function useHead() {
+    const { title, frontMatter } = useConfig();
+    const { route } = useRouter();
+    const socialCard =
+      route === "/" || !title
+        ? `${SOCIAL_MEDIA_LINKS.website.link}/og.jpeg`
+        : `${SOCIAL_MEDIA_LINKS.website.link}/api/og?title=${title}&description=${frontMatter.description}`;
+
+    return (
+      <>
+        <meta name="msapplication-TileColor" content="#fff" />
+        <meta name="theme-color" content="#fff" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta httpEquiv="Content-Language" content="en" />
+        <meta
+          name="description"
+          content="The largest community of tomorrow's open source developers."
+        />
+        <meta
+          name="og:description"
+          content={frontMatter.description ? frontMatter.description : " "}
+        />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:image" content={socialCard} />
+        <meta name="twitter:site:domain" content="codedeployingsquad.tech" />
+        <meta name="twitter:url" content="https://codedeployingsquad.tech" />
+        <meta
+          name="twitter:description"
+          content={frontMatter.description ? frontMatter.description : " "}
+        />
+        <meta
+          name="twitter:title"
+          content={title ? title + " – CDS" : "CodeDeployingSquad"}
+        />
+        <meta
+          name="og:title"
+          content={title ? title + " – CDS" : "CodeDeployingSquad"}
+        />
+        <meta property="og:image" content={socialCard} />
+        <meta name="apple-mobile-web-app-title" content="CodeDeployingSquad" />
+        <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
+        <link rel="icon" href="/favicon.ico" type="image/png" />
+        <link
+          rel="icon"
+          href="/favicon.ico"
+          type="image/svg+xml"
+          media="(prefers-color-scheme: dark)"
+        />
+        <link
+          rel="icon"
+          href="/favicon.ico"
+          type="image/png"
+          media="(prefers-color-scheme: dark)"
+        />
+      </>
+    );
+  },
+  editLink: {
+    text: "Edit this page on GitHub →",
+  },
+  feedback: {
+    content: "Question? Give us feedback →",
+    labels: "feedback",
+  },
+  sidebar: {
+    titleComponent({ title, type }) {
+      if (type === "separator") {
+        return <span className="cursor-default">{title}</span>;
+      }
+      return <>{title}</>;
+    },
+    defaultMenuCollapseLevel: 1,
+    toggleButton: true,
+  },
+  footer: {
+    text: (
+      <div className="flex w-full flex-col items-center">
+        <div>
+          <a
+            className="flex items-center gap-1 text-current"
+            target="_blank"
+            rel="noopener noreferrer"
+            title="vercel.com homepage"
+            href="https://vercel.com?utm_source=codedeployingsquad.tech"
+          >
+            <Image
+              className="dark:hidden opacity-70"
+              src={LOGO_FOR_LIGHT}
+              height={200}
+              width={200}
+              alt="CodeDeployingSquad"
+            />
+            <Image
+              className="hidden dark:block opacity-70"
+              src={LOGO_FOR_DARK}
+              height={200}
+              width={200}
+              alt="CodeDeployingSquad"
+            />
+          </a>
+        </div>
+        <div className="flex mt-5 text-xs flex-col justify-center items-center gap-2">
+          <p>
+            Build with ♥ by <span className="font-bold">Gopal Verma</span>
+          </p>
+          <p>𐄷 MIT License</p>
+        </div>
+      </div>
+    ),
+  },
+  navbar: {
+    extraContent: <TwitterXIcon />,
+  },
+  toc: {
+    backToTop: true,
+    // extraContent: (
+    //   <img alt="placeholder cat" src="https://placekitten.com/g/300/200" />
+    // ),
+  },
+};
+
+export default config;

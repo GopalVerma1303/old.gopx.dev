@@ -1,0 +1,13 @@
+{
+  "*": {
+    "display": "hidden",
+    "theme": {
+      "toc": false,
+      "sidebar": false,
+      "pagination": false,
+      "typesetting": "article"
+    }
+  },
+  "renaming-git-remote": "",
+  "journey-to-innovation": ""
+}

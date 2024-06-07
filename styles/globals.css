@@ -1,33 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+body {
+  font-feature-settings:
+    "rlig" 1,
+    "calt" 1;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
+.home-content p {
+  margin-top: 1.5em;
+  line-height: 1.75em;
+}
+
+.home-content a {
+  --tw-ring-color: hsl(
+    var(--nextra-primary-hue) var(--nextra-primary-saturation) 50%/0.3
+  );
+  --tw-text-opacity: 1;
+  text-underline-position: under;
+  text-decoration-line: underline;
+  text-decoration-thickness: from-font;
+  color: hsl(
+    var(--nextra-primary-hue) var(--nextra-primary-saturation) 50% /
+      var(--tw-text-opacity)
+  );
+}
+
+figcaption {
+  font-size: 0.85rem;
+  line-height: 1.5rem;
+  display: block;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+code.text-\[\.9em\] {
+  font-size: 14px;
+}
+
+@media screen and (max-width: 1200px) {
+  .home-content .hide-medium {
+    display: none;
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
+@media screen and (max-width: 720px) {
+  .home-content p {
+    font-size: 0.9rem;
+  }
+  .home-content .hide-small {
+    display: none;
   }
 }
