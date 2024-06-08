@@ -2,6 +2,7 @@
 title: Nextra – Next.js Static Site Generator
 ---
 
+import { RiTwitterXLine } from "react-icons/ri";
 import { Feature, Features } from '@/components/features'
 import { ArrowRightIcon } from '@/components/icons'
 import cn from 'clsx'
@@ -12,6 +13,7 @@ import { useState } from 'react'
 import docsCardDark from '../public/assets/card-1.dark.png'
 import docsCard from '../public/assets/card-1.png'
 import styles from './index.module.css'
+import {CTA} from "@/components/CTA";
 
 export function File({ name, className, ...props }) {
   return (
@@ -99,12 +101,12 @@ export function I18n() {
 }
 
 <div className="home-content">
-  <div className="content-container">
-    <h1 className="headline">Make beautiful websites <br className='sm:block hidden'/>with Next.js & MDX</h1>
-    <p className="subtitle">Simple, powerful and flexible site generation framework <br className='sm:block hidden'/>with everything you love from <a className="nextjs-link" href="https://nextjs.org" target="_blank">Next.js</a></p>
-    <p className="subtitle">
-      <Link className={styles.cta} href="/docs">Get started <span>→</span></Link>
-    </p>
+  <div className="flex justify-center items-center flex-col">
+    <Link href="https://x.com/bettercallgopal" className="sm:mt-[50px] mt-[30px]">
+      <span className="inline-flex items-center rounded-full bg-gray-500/10 dark:bg-gray-700 px-5 py-2 text-xs font-medium ring-1 ring-inset dark:ring-gray-400/30 ring-gray-500/50 font-anton dark:text-white gap-x-1 text-gray-500 "><RiTwitterXLine />@bettercallgopal</span>
+    </Link>
+    <h1 className="headline font-anton text-center mb-[50px]">BUILDING SOMETHING <br /> PEOPLE WANT</h1>
+    <CTA />
   </div>
   <style jsx>{`
     .content-container {
@@ -132,9 +134,9 @@ export function I18n() {
       font-size: min(4.375rem, max(8vw, 2.5rem));
       font-weight: 700;
       font-feature-settings: initial;
-      letter-spacing: -.12rem;
+      letter-spacing: 0rem;
       margin-left: -0.2rem;
-      margin-top: 3.4rem;
+      margin-top: 2.4rem;
       line-height: 1.1;
       background-image: linear-gradient(146deg,#000,#757a7d);
       -webkit-background-clip: text;
@@ -243,7 +245,6 @@ export function I18n() {
         height: auto;
       }
       .headline {
-        letter-spacing: -.08rem;
       }
     }
     @media screen and (max-width: 1024px) {

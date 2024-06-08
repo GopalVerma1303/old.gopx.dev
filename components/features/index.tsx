@@ -5,6 +5,16 @@ import Link from "next/link";
 import type { ReactNode } from "react";
 import styles from "./style.module.css";
 
+interface FeatureProps {
+  large?: boolean;
+  centered?: boolean;
+  children: ReactNode;
+  lightOnly?: boolean;
+  className?: string;
+  href?: string;
+  index?: number;
+}
+
 export function Feature({
   large,
   centered,
@@ -12,9 +22,9 @@ export function Feature({
   lightOnly,
   className,
   href,
-  index,
+  index = 0,
   ...props
-}) {
+}: FeatureProps) {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -32,7 +42,12 @@ export function Feature({
     >
       {children}
       {href ? (
-        <Link className={styles.link} href={href} target="_blank">
+        <Link
+          className={styles.link}
+          href={href}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <ArrowRightIcon width="1.5em" />
         </Link>
       ) : null}
@@ -40,6 +55,10 @@ export function Feature({
   );
 }
 
-export function Features({ children }: { children: ReactNode }) {
+interface FeaturesProps {
+  children: ReactNode;
+}
+
+export function Features({ children }: FeaturesProps) {
   return <div className={styles.features}>{children}</div>;
 }
