@@ -16,20 +16,19 @@ const logo = (
 
 const config: DocsThemeConfig = {
   project: {
-    link: SOCIAL_MEDIA_LINKS.github_cds.link,
+    link: SOCIAL_MEDIA_LINKS.github.link,
     icon: <GitHubIcon />,
   },
   chat: {
     link: SOCIAL_MEDIA_LINKS.discord.link,
     icon: <DiscordIcon />,
   },
-  docsRepositoryBase:
-    SOCIAL_MEDIA_LINKS.github_cds_website_docsRepositoryBase.link,
+  docsRepositoryBase: SOCIAL_MEDIA_LINKS.github_docsRepositoryBase.link,
   useNextSeoProps() {
     const { asPath } = useRouter();
     if (asPath !== "/") {
       return {
-        titleTemplate: "%s - CDS",
+        titleTemplate: "%s - @bettercallgopal",
       };
     }
   },
@@ -48,10 +47,7 @@ const config: DocsThemeConfig = {
         <meta name="theme-color" content="#fff" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Language" content="en" />
-        <meta
-          name="description"
-          content="The largest community of tomorrow's open source developers."
-        />
+        <meta name="description" content="Gopal Verma's portfolio website." />
         <meta
           name="og:description"
           content={frontMatter.description ? frontMatter.description : " "}
@@ -117,7 +113,7 @@ const config: DocsThemeConfig = {
             target="_blank"
             rel="noopener noreferrer"
             title="vercel.com homepage"
-            href="https://vercel.com?utm_source=codedeployingsquad.tech"
+            href="https://vercel.com/vgopaldps1gmailcoms-projects?utm_source=bettercallgopal.vercel.app"
           >
             <Image
               className="dark:hidden opacity-70"

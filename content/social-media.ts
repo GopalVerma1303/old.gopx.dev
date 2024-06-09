@@ -7,48 +7,44 @@ export type SocialProfile = {
 
 const SOCIAL_MEDIA_LINKS: Record<string, SocialProfile> = {
   website: {
-    username: "codedeployingsquad",
-    link: "https://www.codedeployingsquad.tech",
+    username: "bettercallgopal",
+    link: "https://bettercallgopal.vercel.app/",
   },
-  github_cds: {
-    username: "CodeDeployingSquad",
-    link: "https://github.com/CodeDeployingSquad",
+  github: {
+    username: "bettercallgopal",
+    link: "https://github.com/GopalVerma1303/bettercallgopal",
   },
-  github_cds_website: {
-    username: "cds-website",
-    link: "https://github.com/CodeDeployingSquad/cds-website",
-  },
-  github_cds_website_docsRepositoryBase: {
-    username: "cds-website",
-    link: "https://github.com/CodeDeployingSquad/cds-website/tree/main",
+  github_docsRepositoryBase: {
+    username: "bettercallgopal",
+    link: "https://github.com/GopalVerma1303/bettercallgopal/tree/main",
   },
   discord: {
     username: "codedeployingsquad",
     link: "https://discord.gg/uR7DpxtaKw",
   },
   twitter: {
-    username: "bettercallcds",
-    link: "https://twitter.com/bettercallcds",
+    username: "bettercallgopal",
+    link: "https://twitter.com/bettercallgopal",
   },
   youtube: {
     username: "@codedeployingsquad537",
     link: "https://www.youtube.com/channel/UCgfABFAZox1a26_iyyUuYeg",
   },
   instagram: {
-    username: "bettercallcds",
-    link: "https://www.instagram.com/bettercallcds/",
+    username: "bettercallgopal",
+    link: "https://www.instagram.com/bettercallgopal/",
   },
   facebook: {
-    username: "Code Deploying Squad",
-    link: "https://www.facebook.com/profile.php?id=100069906660853",
+    username: "Gopal Verma",
+    link: "https://www.facebook.com/profile.php?id=100067485754453",
   },
   reddit: {
-    username: "CodeDeployingSquad",
-    link: "https://www.reddit.com/r/CodeDeployingSquad",
+    username: "Gopal__Verma",
+    link: "https://www.reddit.com/user/Gopal__Verma/",
   },
   linkedin: {
-    username: "codedeployingsquad",
-    link: "https://www.linkedin.com/company/codedeployingsquad/about/",
+    username: "Gopal Verma",
+    link: "https://www.linkedin.com/in/vermagopal/",
   },
 };
 

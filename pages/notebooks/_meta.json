@@ -1,29 +1,28 @@
 {
-  "index": "Introduction",
-  "codeofconduct": "Code of Counduct",
-  "guide": "",
-  "templates": "Templates",
-  "-- Projects": {
+  "-- Notebooks": {
     "type": "separator",
-    "title": "Projects"
+    "title": "Notebooks"
   },
-  "applications": "Applications",
-  "packages": "Packages",
-  "sdks": "SDKs",
+  "web": "Web Development",
+  "mobile": "Mobile Development",
+  "mlai": "Machine Learning & AI",
+  "bc": "Blockchain Development",
+  "game": "Game Development",
+  "misc": "Miscellaneous",
   "-- More": {
     "type": "separator",
     "title": "More"
   },
   "blog-link": {
     "title": "Blogs ↗",
-    "href": "/blog"
+    "href": "/blogs"
   },
   "showcase-link": {
     "title": "Showcase ↗",
     "href": "/showcase"
   },
   "about-link": {
-    "title": "About us ↗",
+    "title": "About ↗",
     "href": "/about"
   }
 }
