@@ -33,7 +33,6 @@ export const CTA = () => {
         border,
         boxShadow,
         textDecoration: "none",
-        color: "white",
       }}
       whileHover={{
         scale: 1.015,

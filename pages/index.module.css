@@ -26,12 +26,26 @@
 .optimization {
   display: flex;
   justify-content: center;
-  margin: 0;
-  padding: 1.5rem 1rem;
+  margin: 5px;
+  padding: 0.75rem 1.25rem; /* Decreased padding for smaller screens */
   background: linear-gradient(27deg, #3d3d3d, #000000);
   color: #e3e3e3;
-  border-radius: 0.375rem;
-  font-weight: 300;
+  border-radius: 50px; /* Changed border radius to 50px for smaller size */
+  font-weight: 700;
+}
+
+/* Media query for small and medium screens */
+@media screen and (max-width: 992px) {
+  .optimization {
+    padding: 0.4rem 0.9rem; /* Adjusted padding for medium screens */
+  }
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 768px) {
+  .optimization {
+    padding: 0.3rem 0.8rem; /* Adjusted padding for smaller screens */
+  }
 }
 
 :global(.dark) .optimization {
