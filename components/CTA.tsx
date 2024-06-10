@@ -8,10 +8,23 @@ import {
   animate,
 } from "framer-motion";
 
+import { getCalApi } from "@calcom/embed-react";
+
 const COLORS_TOP = ["#13FFAA", "#1E67C6", "#CE84CF", "#DD335C"];
 
 export const CTA = () => {
   const color = useMotionValue(COLORS_TOP[0]);
+
+  useEffect(() => {
+    (async function () {
+      const cal = await getCalApi({});
+      cal("ui", {
+        styles: { branding: { brandColor: "#000000" } },
+        hideEventTypeDetails: false,
+        layout: "month_view",
+      });
+    })();
+  }, []);
 
   useEffect(() => {
     animate(color, COLORS_TOP, {
@@ -27,8 +40,10 @@ export const CTA = () => {
   const boxShadow = useMotionTemplate`0px 4px 24px ${color}`;
 
   return (
-    <motion.a
-      href="https://cal.com/bettercallgopal/15min"
+    <motion.button
+      data-cal-namespace=""
+      data-cal-link="bettercallgopal/15min"
+      data-cal-config='{"layout":"month_view"}'
       style={{
         border,
         boxShadow,
@@ -44,6 +59,6 @@ export const CTA = () => {
     >
       Book a call
       <FiPhoneCall className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
-    </motion.a>
+    </motion.button>
   );
 };
