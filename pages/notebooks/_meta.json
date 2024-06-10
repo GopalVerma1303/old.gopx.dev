@@ -5,9 +5,6 @@
   },
   "web": "Web Development",
   "mobile": "Mobile Development",
-  "mlai": "Machine Learning & AI",
-  "bc": "Blockchain Development",
-  "game": "Game Development",
   "misc": "Miscellaneous",
   "-- More": {
     "type": "separator",

@@ -17,25 +17,6 @@ import docsCard from '../public/assets/card-1.png'
 import styles from './index.module.css'
 import {CTA} from "@/components/CTA";
 
-export function File({ name, className, ...props }) {
-  return (
-    <span className={cn(styles.file, className)} {...props}>
-      {name}
-    </span>
-  )
-}
-
-export function Comparison({ a, b, invert, ...props }) {
-  return (
-    <div className={cn(styles.comparison, invert && styles.invert)} {...props}>
-      <div>{a}</div>
-      <ArrowRightIcon width="1.2em" />
-      <div>{b}</div>
-    </div>
-  )
-}
-
-
 <div className="home-content">
   <div className="flex justify-center items-center flex-col">
     <Link href="https://x.com/bettercallgopal" className="sm:mt-[50px] mt-[30px]">
