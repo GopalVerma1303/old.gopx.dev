@@ -48,8 +48,8 @@ export default async function (req) {
         }}
       >
         <img
-          style={{ position: "absolute", top: 60, right: 30 }}
-          height="150"
+          style={{ position: "absolute", top: 10, right: 30 }}
+          height="120"
           src={
             "https://bettercallgopal.vercel.app/personal/main-white-bg-trans.png"
           }
