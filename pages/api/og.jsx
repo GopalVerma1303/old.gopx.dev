@@ -38,8 +38,8 @@ export default async function (req) {
           padding: 80,
           backgroundColor: "#030303",
           backgroundImage: `
-            linear-gradient(0deg, transparent 23%, #333 23%, #333 27%, transparent 27%, transparent 73%, #333 73%, #333 77%, transparent 77%, transparent),
-            linear-gradient(90deg, transparent 23%, #333 23%, #333 27%, transparent 27%, transparent 73%, #333 73%, #333 77%, transparent 77%, transparent)
+            linear-gradient(0deg, transparent 24%, #333 24%, #333 27%, transparent 27%, transparent 74%, #333 74%, #333 77%, transparent 77%, transparent),
+            linear-gradient(90deg, transparent 24%, #333 24%, #333 27%, transparent 27%, transparent 74%, #333 74%, #333 77%, transparent 77%, transparent)
             `,
           backgroundSize: "100px 100px",
           backgroundPosition: "-30px -10px",
@@ -51,7 +51,7 @@ export default async function (req) {
           style={{ position: "absolute", top: 10, right: 50 }}
           height="170"
           src={
-            "https://bettercallgopal.vercel.app/personal/full-white-bg-trans.png"
+            "https://bettercallgopal.vercel.app/personal/main-white-bg-trans.png"
           }
           alt="@bettercallgopal logo"
         />
