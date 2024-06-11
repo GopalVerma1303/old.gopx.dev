@@ -22,8 +22,7 @@
     "type": "page",
     "title": "Showcase",
     "theme": {
-      "typesetting": "article",
-      "layout": "full"
+      "typesetting": "article"
     }
   },
   "about": {
