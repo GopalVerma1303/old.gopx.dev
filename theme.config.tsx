@@ -54,19 +54,19 @@ const config: DocsThemeConfig = {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
-        <meta name="twitter:site:domain" content="codedeployingsquad.tech" />
-        <meta name="twitter:url" content="https://codedeployingsquad.tech" />
+        <meta name="twitter:site:domain" content="bettercallgopal.vercel.app" />
+        <meta name="twitter:url" content="https://bettercallgopal.vercel.app" />
         <meta
           name="twitter:description"
           content={frontMatter.description ? frontMatter.description : " "}
         />
         <meta
           name="twitter:title"
-          content={title ? title + " – CDS" : "CodeDeployingSquad"}
+          content={title ? title + " – @bettercallgopal" : "bettercallgopal"}
         />
         <meta
           name="og:title"
-          content={title ? title + " – CDS" : "CodeDeployingSquad"}
+          content={title ? title + " – @bettercallgopal" : "bettercallgopal"}
         />
         <meta property="og:image" content={socialCard} />
         <meta name="apple-mobile-web-app-title" content="CodeDeployingSquad" />

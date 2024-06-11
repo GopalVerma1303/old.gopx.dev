@@ -37,8 +37,10 @@ export default async function (req) {
           justifyContent: "center",
           padding: 80,
           backgroundColor: "#030303",
-          backgroundImage:
-            "radial-gradient(circle at 25px 25px, #333 5%, transparent 0%), radial-gradient(circle at 75px 75px, #333 5%, transparent 0%)",
+          backgroundImage: `
+            linear-gradient(0deg, transparent 23%, #333 23%, #333 27%, transparent 27%, transparent 73%, #333 73%, #333 77%, transparent 77%, transparent),
+            linear-gradient(90deg, transparent 23%, #333 23%, #333 27%, transparent 27%, transparent 73%, #333 73%, #333 77%, transparent 77%, transparent)
+            `,
           backgroundSize: "100px 100px",
           backgroundPosition: "-30px -10px",
           fontWeight: 600,
@@ -46,8 +48,8 @@ export default async function (req) {
         }}
       >
         <img
-          style={{ position: "absolute", top: 70, left: 80 }}
-          height="124"
+          style={{ position: "absolute", top: 10, right: 50 }}
+          height="170"
           src={
             "https://bettercallgopal.vercel.app/personal/full-white-bg-trans.png"
           }
