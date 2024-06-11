@@ -47,7 +47,7 @@ export default async function (req) {
       >
         <img
           style={{ position: "absolute", top: 70, left: 80 }}
-          height="48"
+          height="64"
           src={
             "https://bettercallgopal.vercel.app/personal/full-white-bg-trans.png"
           }
@@ -63,8 +63,7 @@ export default async function (req) {
             letterSpacing: -1,
           }}
         >
-          Gopal Verma's devsite for sharing code, content, and showcase
-          projects!
+          By Gopal Verma (@bettercallgopal)
         </p>
         <h1
           style={{
