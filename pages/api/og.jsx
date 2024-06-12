@@ -1,6 +1,5 @@
 /* eslint-env node */
 import { ImageResponse } from "@vercel/og";
-import Image from "next/image";
 
 export const config = {
   runtime: "edge",
@@ -15,7 +14,6 @@ export default async function (req) {
 
   const { searchParams } = new URL(req.url);
 
-  // ?title=<title>
   const hasTitle = searchParams.has("title");
   const hasDescription = searchParams.has("description");
   const title = hasTitle
@@ -58,7 +56,7 @@ export default async function (req) {
         <p
           style={{
             position: "absolute",
-            bottom: 70,
+            bottom: 100,
             left: 80,
             margin: 0,
             fontSize: 30,
@@ -70,7 +68,7 @@ export default async function (req) {
         <h1
           style={{
             fontSize: 82,
-            margin: "0 0 40px -2px",
+            margin: "-90px 0 40px -2px",
             lineHeight: 1.1,
             textShadow: "0 2px 30px #000",
             letterSpacing: -4,
