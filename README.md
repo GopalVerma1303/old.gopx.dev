@@ -32,7 +32,7 @@
 <br>
 <br>
 <div align="center">
-  <img alt="gpl" title="gpl" src="https://bettercallgopal.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fss.6898e224.png&w=3840&q=75" width="100%" style="border: 1px solid gray; border-radius: 5px; display: block; margin: 0 auto;">
+  <img alt="gpl" title="gpl" src="https://bettercallgopal.vercel.app/showcase/bcg.png" width="100%" style="border: 1px solid gray; border-radius: 5px; display: block; margin: 0 auto;">
 </div>
 <br>
 
