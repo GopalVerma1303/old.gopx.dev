@@ -26,6 +26,11 @@ const FIRE_WORKS: any[] = [
 
 const WORKS: any[] = [
   {
+    title: "My Dotfiles",
+    href: "https://github.com/GopalVerma1303/dotfiles",
+    img: "/showcase/dotfiles.png",
+  },
+  {
     title: "CDS Website",
     href: "https://github.com/CodeDeployingSquad/WWW",
     img: "/showcase/cds.png",
