@@ -31,6 +31,11 @@ const WORKS: any[] = [
     img: "/showcase/cds.png",
   },
   {
+    title: "Old Devsite",
+    href: "https://github.com/GopalVerma1303/portfolio",
+    img: "/showcase/old-devsite.png",
+  },
+  {
     title: "GitHub Repo Tree Generator",
     href: "https://github.com/GopalVerma1303/github-repo-tree-generator",
     img: "/showcase/github-repo-tree.png",
