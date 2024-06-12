@@ -140,6 +140,9 @@ const config: DocsThemeConfig = {
       </div>
     ),
   },
+  search: {
+    placeholder: "Search for something...",
+  },
   navbar: {
     extraContent: <TwitterXIcon />,
   },
