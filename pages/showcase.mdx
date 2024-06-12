@@ -4,7 +4,8 @@ description: Project Gallery - A curated showcase of my works 📺
 ---
 
 import { Cards } from 'nextra/components'
-
+import {WORKS, COLLABORATIONS, FIRE_WORKS} from '@/content/showcase'
+import Image from 'next/image'
 
 export function ShowcaseHeader() {
   return (
@@ -12,7 +13,7 @@ export function ShowcaseHeader() {
       <h1>
         <span className="font-bold leading-tight lg:text-5xl">Showcase</span>
       </h1>
-      <p className="text-center text-gray-500 dark:text-gray-400 font-space-grotesk">
+      <p className="italic text-center text-gray-500 dark:text-gray-400 font-space-grotesk">
         Explore my showcased projects, each demonstrating my skills and creativity.
       </p>
     </div>
@@ -21,81 +22,48 @@ export function ShowcaseHeader() {
 
 <ShowcaseHeader />
 
+<p className="text-xl font-bold mb-4">🔥 Works</p>
+
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 border-b border-gray-400 border-opacity-20 mb-16 pb-8">
+  {
+    FIRE_WORKS.map((work) => (
+    <Cards>
+      <ShowcaseCard title={work.title} href={work.href} >
+        <Image src={work.img} width={500} height={500} />
+      </ShowcaseCard>
+    </Cards> 
+    ))
+  }
+</div>
+
+
 <p className="text-xl font-bold mb-4">Works</p>
 
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 border-b border-gray-400 border-opacity-20 mb-16 pb-8">
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
+  {
+    WORKS.map((work) => (
+    <Cards>
+      <ShowcaseCard title={work.title} href={work.href} >
+        <Image src={work.img} width={500} height={500} />
+      </ShowcaseCard>
+    </Cards> 
+    ))
+  }
 </div>
 
 <p className="text-xl font-bold mb-4">Collaborations</p>
 
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 border-b border-gray-400 border-opacity-20 mb-16 pb-8">
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
+  {
+    COLLABORATIONS.map((work) => (
+    <Cards>
+      <ShowcaseCard title={work.title} href={work.href} >
+        <Image src={work.img} width={500} height={500} />
+      </ShowcaseCard>
+    </Cards> 
+   ))
+  }
 </div>
-
-<p className="text-xl font-bold mb-4">Old works</p>
-
-<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 border-b border-gray-400 border-opacity-20 mb-16 pb-8">
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-<Cards>
-  <ShowcaseCard title="@bettercallgopal Website" href="/showcase/bettercallgopal" target="_self">
-    <>![@bettercallgopal preview](@/public/showcase/ss.png)</>
-  </ShowcaseCard>
-</Cards>
-</div>
-
 
 export const ShowcaseCard = Object.assign(
   // Copy card component and add default props
@@ -105,7 +73,6 @@ export const ShowcaseCard = Object.assign(
     defaultProps: {
       image: true,
       arrow: true,
-      target: '_blank'
     }
   }
 )

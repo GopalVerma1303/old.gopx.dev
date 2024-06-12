@@ -12,7 +12,7 @@ const withNextra = nextra({
 
 export default withNextra({
   images: {
-    domains: ["www.codedeployingsquad.tech", "media.licdn.com"],
+    domains: ["www.codedeployingsquad.tech", "media.licdn.com", "github.com"],
   },
   reactStrictMode: true,
   eslint: {
