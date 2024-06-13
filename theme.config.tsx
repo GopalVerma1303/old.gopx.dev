@@ -47,7 +47,10 @@ const config: DocsThemeConfig = {
         <meta name="theme-color" content="#fff" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Language" content="en" />
-        <meta name="description" content="Gopal Verma's portfolio website." />
+        <meta
+          name="description"
+          content="Gopal Verma's devsite for sharing code, blogs and projects!"
+        />
         <meta
           name="og:description"
           content={frontMatter.description ? frontMatter.description : " "}
@@ -62,14 +65,14 @@ const config: DocsThemeConfig = {
         />
         <meta
           name="twitter:title"
-          content={title ? title + " – @bettercallgopal" : "bettercallgopal"}
+          content={title ? title + " – @bettercallgopal" : "@bettercallgopal"}
         />
         <meta
           name="og:title"
-          content={title ? title + " – @bettercallgopal" : "bettercallgopal"}
+          content={title ? title + " – @bettercallgopal" : "@bettercallgopal"}
         />
         <meta property="og:image" content={socialCard} />
-        <meta name="apple-mobile-web-app-title" content="CodeDeployingSquad" />
+        <meta name="apple-mobile-web-app-title" content="@bettercallgopal" />
         <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" type="image/png" />
         <link
@@ -120,14 +123,14 @@ const config: DocsThemeConfig = {
               src={LOGO_FOR_LIGHT}
               height={200}
               width={200}
-              alt="CodeDeployingSquad"
+              alt="@bettercallgopal"
             />
             <Image
               className="hidden dark:block opacity-70"
               src={LOGO_FOR_DARK}
               height={200}
               width={200}
-              alt="CodeDeployingSquad"
+              alt="@bettercallgopal"
             />
           </a>
         </div>

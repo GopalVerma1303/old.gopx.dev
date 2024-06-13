@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://bettercallgopal.vercel.app/">
-    <img alt="CDS" title="CDS" src="https://bettercallgopal.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffull-white-bg-trans.ffdbd8f1.png&w=640&q=75" width="200">
+    <img alt="bcg_logo" title="bcg_logo" src="https://bettercallgopal.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffull-white-bg-trans.ffdbd8f1.png&w=640&q=75" width="200">
   </a>
 </p> 
 <h1 align="center"> @bettercallgopal </h1> 
@@ -35,7 +35,6 @@
   <img alt="gpl" title="gpl" src="https://bettercallgopal.vercel.app/showcase/bcg.png" width="100%" style="border: 1px solid gray; border-radius: 5px; display: block; margin: 0 auto;">
 </div>
 <br>
-
 
 ## Getting Started
 
