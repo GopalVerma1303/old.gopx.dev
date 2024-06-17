@@ -20,7 +20,7 @@ export default async function (req) {
     ? searchParams.get("title")?.slice(0, 100)
     : "Content Title";
   const description = hasDescription
-    ? searchParams.get("description")?.slice(0, 100)
+    ? searchParams.get("description")?.slice(0, 200)
     : "Content Discription";
 
   return new ImageResponse(
