@@ -55,7 +55,9 @@ export default async function (req) {
         />
         <p
           style={{
+            flexDirection: "row",
             position: "absolute",
+            alignItems: "center",
             bottom: 100,
             left: 80,
             margin: 0,
@@ -63,10 +65,20 @@ export default async function (req) {
             letterSpacing: -1,
           }}
         >
-          By Gopal Verma (@bettercallgopal)
+          <img
+            style={{
+              borderRadius: "50%",
+              marginRight: "20px",
+            }}
+            height="70"
+            src={"https://bettercallgopal.vercel.app/people/gopalverma.png"}
+            alt="@bettercallgopal logo"
+          />
+          Gopal Verma (@bettercallgopal)
         </p>
         <h1
           style={{
+            width: "900px",
             fontSize: 82,
             margin: "-90px 0 40px -2px",
             lineHeight: 1.1,
@@ -82,6 +94,7 @@ export default async function (req) {
         </h1>
         <p
           style={{
+            width: "900px",
             fontSize: 34,
             margin: "0 0 40px -2px",
             lineHeight: 1.1,
