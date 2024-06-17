@@ -1,0 +1,52 @@
+---
+title: Git Error
+description: You have divergent branches and need to specify how to reconcile them.
+---
+
+# Git Error: You have divergent branches and need to specify how to reconcile them.
+
+When working with local and remote branches in Git, you might encounter this error when pushing or pulling from the remote (GitHub).
+
+![Rebase error](/notebooks/misc/git/rebase-error-1.png)
+
+## What happened?
+
+ - Your local branch and the branch on GitHub (remote branch) have different changes.
+ - Git doesn't know how to combine (reconcile) these changes.
+
+## Why it matters?
+
+ - You need to decide how to merge these changes so both branches are up to date.
+
+## How to fix?
+
+1. **Merge**: Combine changes and keep all commits (default strategy).
+
+![Merge](/notebooks/misc/git/merge.png)
+
+```bash
+git pull --no-rebase origin main
+
+#or
+
+git pull origin main
+```
+
+2. **Rebase**: Move your changes on top of the remote changes, creating a straight line of commits.
+
+![Rebase](/notebooks/misc/git/rebase.png)
+
+```bash
+git pull --rebase origin main
+```
+
+3. **Fast-forward**: Only update if there are no new local changes.
+
+![ff](/notebooks/misc/git/ff.png)
+
+```bash
+git pull --ff-only origin main
+```
+
+## Summary
+Choose a strategy (merge, rebase, or fast-forward) to update your branch.

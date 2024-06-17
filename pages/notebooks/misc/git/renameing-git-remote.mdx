@@ -1,0 +1,45 @@
+---
+title: Renaming git remote
+description: How do I rename an existing Git Remote? ᛦ
+---
+
+# How do I rename an existing Git Remote?
+
+
+### Here's an example
+
+Let’s say that your current remote name is “origin_1”. And now you want to change the remote name to  “origin_2”.
+
+**1. Confirm the name of your current remote by running the following command:**
+
+```bash
+git remote -v
+```
+
+You should see an output like the following
+
+```bash
+origin_1  https://github.com/username/repository.git (fetch)
+origin_1  https://github.com/username/repository.git (push)
+```
+
+**2. Now that the current remote name is confirmed — you can change it by running the following command:**
+
+```bash
+git remote rename origin_1 origin_2
+```
+
+This command tells git to rename the current remote to something different. In this example, we’re changing the remote name to “origin_2”, but you can change your remote to be anything you want.
+
+**3.  Verify that your remote has changed from “beanstalk” to “origin” by running the following command:**
+
+```bash
+git remote -v
+```
+
+You should see an output like the following
+
+```bash
+origin_2  https://github.com/username/repository.git (fetch)
+origin_2  https://github.com/username/repository.git (push)
+```
