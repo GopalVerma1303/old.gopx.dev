@@ -6,6 +6,7 @@
   },
   "web": "Web Development",
   "mobile": "Mobile Development",
+  "ai": "Artificial Intelligence",
   "misc": "Miscellaneous",
   "-- More": {
     "type": "separator",
