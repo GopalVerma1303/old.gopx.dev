@@ -58,7 +58,7 @@ export default async function (req) {
             flexDirection: "row",
             position: "absolute",
             alignItems: "center",
-            bottom: 100,
+            bottom: 40,
             left: 80,
             margin: 0,
             fontSize: 30,
