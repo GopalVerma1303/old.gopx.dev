@@ -1,0 +1,131 @@
+---
+title: "How to run Ollama locally from an external drive?"
+description: "Boosts security and operational efficiency, while allowing customization, giving users full control over their data and model deployment."
+---
+
+import { Callout } from 'nextra/components'
+import { FileTree } from 'nextra/components'
+import { Steps } from 'nextra/components'
+
+# How to run Ollama locally from an external drive?
+
+![llama-on-disk](/notebooks/ai/llama-on-disk.png)
+
+## Why run LLMs locally?
+
+1. <u>**Data security:**</u>
+Local LLMs can process data on-site, reducing the risk of data breaches by eliminating the need to transmit data over the internet. This can also help meet regulatory requirements for data privacy and security.
+
+2. <u>**Reduced latency:**</u>
+Running LLMs locally can reduce the response time between a request and the model's response. This can be especially beneficial for applications that require real-time data processing.
+
+3. <u>**Customization:**</u>
+Local LLMs can be tailored to specific needs and requirements, allowing for better performance than general-purpose models.
+
+4. <u>**Control:**</u>
+Local deployment gives users complete control over their hardware, data, and the LLMs themselves. This can be useful for optimization and customization according to specific needs and regulations.
+
+5. <u>**Flexibility:**</u>
+Local deployment can also provide greater flexibility than working with third-party servers, which may limit businesses to pre-defined models and functionality. 
+
+## But why Ollama?
+
+Ollama bridges the gap between large language models (LLMs) and local development, allowing you to run powerful LLMs directly on your machine. Here’s how Ollama empowers you:
+
+1. <u>**Simplified LLM Interaction:**</u>
+Ollama’s straightforward CLI and API make it easy to create, manage, and interact with LLMs, accessible to a wide range of users.
+
+2. <u>**Pre-built Model Library:**</u>
+Access a curated collection of ready-to-use LLM models, saving you time and effort.
+
+3. <u>**Customization Options:**</u>
+Fine-tune models to your specific needs, customize prompts, or import models from various sources for greater control.
+
+## How to setup?
+
+### 1. Download Ollama for your OS from [here](https://www.ollama.com/download).
+<Callout type="info" emoji="👾">
+  To checkout the code base and community integrations, check out the [Ollama GitHub repository](https://github.com/ollama/ollama)
+</Callout>
+
+### 2. After downloading, run your first model.
+This will install the model at `~/.ollama/models/` and allow you to interact with it.
+```bash
+ollama run llama3 # or any other model you want
+```
+### ✨3. How to install models in an external drive?
+
+For this, follow these steps after connecting your hard-drive to your machine.
+
+#### 1. Execute this command to create a models directory in your external drive:
+
+```bash
+mkdir -p ai_models/ollama/models
+```
+This will generate a dir structure like this in your external drive:
+<FileTree>
+  <FileTree.Folder name="Webdev" />
+  <FileTree.Folder name="Appdev" />
+  <FileTree.Folder name="ai_models" defaultOpen>
+    <FileTree.Folder name="ollama" defaultOpen>
+      <FileTree.Folder name="models" defaultOpen>
+      </FileTree.Folder>
+    </FileTree.Folder>
+  </FileTree.Folder>
+</FileTree>
+
+#### 2. Creating a symlink in your `~/.ollama/models` directory to your external drive:
+
+The Ollama is designed to search for its models in the `~/.ollama/models` directory by default. However, if you want to store your OLLaMA models on an external drive (in this case, `~/Volumes/name_of_your_drive/ai_models/ollama/models`), you can create a symlink to redirect the library's search to the external location.
+
+<Steps>
+  ### Remove the default `models` directory in your `~/.ollama` directory.
+
+  ```bash
+  cd ~/.ollama/
+  sudo rm -rf models
+  # enter the password 🔑
+  ```
+
+  ### Create a symlink.
+
+  ```bash
+  sudo ln -s /Volumes/name_of_your_drive/ai_models/ollama/models ~/.ollama/models
+  ```
+
+  ### Check the `~/.ollama` for symlink.
+  Execute this command to all items with info:
+
+  ```bash
+  ls -la
+  ```
+
+  You will see a similar output:
+
+```bash
+total 48
+drwxr-xr-x@   8 gopalverma  staff   256 Jun 20 00:38 .
+drwxr-x---+ 107 gopalverma  staff  3424 Jun 22 10:57 ..
+-rw-r--r--@   1 gopalverma  staff  6148 Jun 19 17:34 .DS_Store
+-rw-------    1 gopalverma  staff  4976 Jun 20 00:38 history
+-rw-------@   1 gopalverma  staff   387 Jun 19 14:40 id_ed25519
+-rw-r--r--@   1 gopalverma  staff    81 Jun 19 14:40 id_ed25519.pub
+drwxr-xr-x@   3 gopalverma  staff    96 Jun 19 14:40 logs
+lrwxr-xr-x    1 root        staff    41 Jun 19 16:32 models -> /Volumes/GopalSSD/ai_models/ollama/models
+# above line means that the models directory is linked to the external drive
+```
+  ### Install and Run the model.
+
+  ```bash
+  ollama run llama3
+  ```
+  This will install the model at `/Volumes/name_of_your_drive/ai_models/ollama/models` and allow you to interact with it.
+
+  ### Use it!
+
+![ollama-demo](/notebooks/ai/ollama-demo.png)
+
+</Steps>
+
+<br />
+<p className="align-center text-center font-extrabold ">fin.</p>
