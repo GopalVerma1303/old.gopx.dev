@@ -2,7 +2,13 @@ import { useRouter } from "next/router";
 import type { DocsThemeConfig } from "nextra-theme-docs";
 import { useConfig } from "nextra-theme-docs";
 import Image from "next/image";
-import { GitHubIcon, TwitterXIcon, DiscordIcon } from "@/components/icons";
+import {
+  GitHubIcon,
+  TwitterXIcon,
+  DiscordIcon,
+  RssIcon,
+  SiteMapIcon,
+} from "@/components/icons";
 import SOCIAL_MEDIA_LINKS from "@/content/social-media";
 import LOGO_FOR_DARK from "@/public/personal/full-white-bg-trans.png";
 import LOGO_FOR_LIGHT from "@/public/personal/full-black-bg-trans.png";
@@ -147,7 +153,7 @@ const config: DocsThemeConfig = {
     placeholder: "Search for something...",
   },
   navbar: {
-    extraContent: <TwitterXIcon />,
+    extraContent: [<TwitterXIcon />, <RssIcon />, <SiteMapIcon />],
   },
   toc: {
     backToTop: true,

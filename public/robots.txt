@@ -1,0 +1,14 @@
+# *
+User-agent: *
+Allow: /
+
+# black-listed-bot
+User-agent: black-listed-bot
+Disallow: /termsconditions
+Disallow: /privacypolicy
+
+# Host
+Host: https://bettercallgopal.vercel.app
+
+# Sitemaps
+Sitemap: https://bettercallgopal.vercel.app/sitemap.xml

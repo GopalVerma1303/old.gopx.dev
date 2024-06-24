@@ -30,3 +30,5 @@ export { default as IdCardIcon } from "./id-card.svg";
 export { GitHubIcon as GitHubIcon } from "./github-icon";
 export { DiscordIcon as DiscordIcon } from "./discord-icon";
 export { TwitterXIcon as TwitterXIcon } from "./twitter-x-icon";
+export { RssIcon as RssIcon } from "./rss";
+export { SiteMapIcon as SiteMapIcon } from "./sitemap";
