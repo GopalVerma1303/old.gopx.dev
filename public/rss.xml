@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+    <channel>
+        <title>Gopal Verma | @bettercallgopal</title>
+        <link>http://localhost:3000</link>
+        <description>I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.</description>
+        <lastBuildDate>Mon, 24 Jun 2024 09:13:39 GMT</lastBuildDate>
+        <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
+        <generator>https://github.com/jpmonette/feed</generator>
+        <image>
+            <title>Gopal Verma | @bettercallgopal</title>
+            <url>http://localhost:3000/logo.png</url>
+            <link>http://localhost:3000</link>
+        </image>
+        <copyright>All rights reserved 2024, Gopal Verma</copyright>
+        <item>
+            <title><![CDATA[Renaming existing Git Remote]]></title>
+            <link>http://localhost:3000/blogs/renaming-git-remote</link>
+            <guid>renaming-git-remote</guid>
+            <pubDate>Fri, 15 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[How do I rename an existing Git Remote? ᛦ]]></description>
+        </item>
+    </channel>
+</rss>

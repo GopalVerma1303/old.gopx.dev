@@ -1,0 +1,16 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Gopal Verma | @bettercallgopal",
+    "home_page_url": "http://localhost:3000",
+    "feed_url": "http://localhost:3000/rss.json",
+    "description": "I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.",
+    "icon": "http://localhost:3000/logo.png",
+    "items": [
+        {
+            "url": "http://localhost:3000/blogs/renaming-git-remote",
+            "title": "Renaming existing Git Remote",
+            "summary": "How do I rename an existing Git Remote? ᛦ",
+            "date_modified": "2023-12-15T00:00:00.000Z"
+        }
+    ]
+}

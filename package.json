@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "rss:build": "bun run scripts/rss.ts"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.0",
@@ -16,11 +17,15 @@
     "@vercel/og": "^0.6.2",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
+    "feed": "^4.2.2",
     "framer-motion": "^11.2.10",
+    "fs": "^0.0.1-security",
+    "gray-matter": "^4.0.3",
     "mini-svg-data-uri": "^1.4.4",
     "next": "^14.2.3",
     "nextra": "^2.13.4",
     "nextra-theme-docs": "^2.13.4",
+    "path": "^0.12.7",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
