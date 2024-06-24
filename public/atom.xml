@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
     <title>Gopal Verma | @bettercallgopal</title>
-    <updated>2024-06-24T09:13:39.567Z</updated>
+    <updated>2024-06-24T11:58:35.167Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:3000"/>
     <link rel="self" href="http://localhost:3000/atom.xml"/>
@@ -12,9 +12,51 @@
     <rights>All rights reserved 2024, Gopal Verma</rights>
     <entry>
         <title type="html"><![CDATA[Renaming existing Git Remote]]></title>
-        <id>http://localhost:3000/blogs/renaming-git-remote</id>
-        <link href="http://localhost:3000/blogs/renaming-git-remote"/>
+        <id>http://localhost:3000/pages/blogs/renaming-git-remote</id>
+        <link href="http://localhost:3000/pages/blogs/renaming-git-remote"/>
         <updated>2023-12-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[How do I rename an existing Git Remote? ᛦ]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Webdev notes]]></title>
+        <id>http://localhost:3000/pages/notebooks/web/web-note</id>
+        <link href="http://localhost:3000/pages/notebooks/web/web-note"/>
+        <updated>2024-06-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[webdev dis]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Notes for web3]]></title>
+        <id>http://localhost:3000/pages/notebooks/web3/note</id>
+        <link href="http://localhost:3000/pages/notebooks/web3/note"/>
+        <updated>2024-06-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Discriptions]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[appdev notes]]></title>
+        <id>http://localhost:3000/pages/notebooks/mobile/app-note</id>
+        <link href="http://localhost:3000/pages/notebooks/mobile/app-note"/>
+        <updated>2024-06-24T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[appdev notes disc]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to run Ollama locally from an external drive?]]></title>
+        <id>http://localhost:3000/pages/notebooks/ai/ollama-external</id>
+        <link href="http://localhost:3000/pages/notebooks/ai/ollama-external"/>
+        <updated>2024-06-21T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Giving users full control over their data and model deployment.]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Renaming git remote]]></title>
+        <id>http://localhost:3000/pages/notebooks/misc/renaming-git-remote</id>
+        <link href="http://localhost:3000/pages/notebooks/misc/renaming-git-remote"/>
+        <updated>2024-06-01T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How do I rename an existing Git Remote? ᛦ]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[How to solve this Git error?]]></title>
+        <id>http://localhost:3000/pages/notebooks/misc/divergent-branches-reconcile</id>
+        <link href="http://localhost:3000/pages/notebooks/misc/divergent-branches-reconcile"/>
+        <updated>2024-06-19T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[You have divergent branches and need to specify how to reconcile them.]]></summary>
     </entry>
 </feed>

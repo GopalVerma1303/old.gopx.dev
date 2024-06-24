@@ -25,10 +25,6 @@ const config: DocsThemeConfig = {
     link: SOCIAL_MEDIA_LINKS.github.link,
     icon: <GitHubIcon />,
   },
-  chat: {
-    link: SOCIAL_MEDIA_LINKS.discord.link,
-    icon: <DiscordIcon />,
-  },
   docsRepositoryBase: SOCIAL_MEDIA_LINKS.github_docsRepositoryBase.link,
   useNextSeoProps() {
     const { asPath } = useRouter();
@@ -153,7 +149,7 @@ const config: DocsThemeConfig = {
     placeholder: "Search for something...",
   },
   navbar: {
-    extraContent: [<TwitterXIcon />, <RssIcon />, <SiteMapIcon />],
+    extraContent: [<SiteMapIcon />, <RssIcon />],
   },
   toc: {
     backToTop: true,

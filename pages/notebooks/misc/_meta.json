@@ -1,5 +1,4 @@
 {
-  "jsts": "JS-TS",
-  "dsa": "DSA",
-  "git": "Git"
+  "divergent-branches-reconcile": "Git: Branch reconciling",
+  "renaming-git-remote": "Git: Renaming git remote"
 }

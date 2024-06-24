@@ -1,3 +1,5 @@
+import { BsTwitterX } from "react-icons/bs";
+
 export function TwitterXIcon() {
   return (
     <>
@@ -8,28 +10,7 @@ export function TwitterXIcon() {
         aria-label="CodeDeployingSquad twitter"
         rel="nofollow noreferrer"
       >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-          viewBox="0 0 24 24"
-          fill="currentColor"
-          className="feather feather-twitter"
-        >
-          <path d="M16.99 0H20.298L13.071 8.26L21.573 19.5H14.916L9.702 12.683L3.736 19.5H0.426L8.156 10.665L0 0H6.826L11.539 6.231L16.99 0ZM15.829 17.52H17.662L5.83 1.876H3.863L15.829 17.52Z"></path>
-        </svg>
-        <style jsx>
-          {`
-            svg {
-              transition: fill 0.5s ease;
-            }
-
-            svg:hover,
-            svg:focus {
-              fill: #0077ff;
-            }
-          `}
-        </style>
+        <BsTwitterX className="w-[20px] h-[20px] transition-colors duration-500 hover:fill-[#0077ff] focus:fill-[#0077ff]" />
       </a>
       {/* <a
           href="https://github.com/sponsors/codedeployingsquad"

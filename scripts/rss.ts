@@ -23,24 +23,37 @@ function isValidDate(date: Date): boolean {
 }
 
 async function getBlogData(): Promise<Blog[]> {
-  const blogsDirectory = path.join(process.cwd(), "pages", "blogs");
-  const filenames = fs.readdirSync(blogsDirectory);
+  const blogDirectories = [
+    "pages/blogs",
+    "pages/notebooks/web",
+    "pages/notebooks/web3",
+    "pages/notebooks/mobile",
+    "pages/notebooks/ai",
+    "pages/notebooks/misc",
+  ];
 
-  const blogs: Blog[] = filenames
-    .filter((filename) => filename !== "_meta.json")
-    .map((filename) => {
-      const filePath = path.join(blogsDirectory, filename);
-      const fileContent = fs.readFileSync(filePath, "utf8");
-      const { data, content } = matter(fileContent);
+  let blogs: Blog[] = [];
 
-      console.log(`Processing blog: ${filename}, Date: ${data.date}`);
+  for (const dir of blogDirectories) {
+    const directoryPath = path.join(process.cwd(), dir);
+    const filenames = fs.readdirSync(directoryPath);
 
-      return {
-        meta: data as BlogMeta,
-        content,
-        slug: filename.replace(/\.mdx?$/, ""),
-      };
-    });
+    const dirBlogs: Blog[] = filenames
+      .filter((filename) => filename !== "_meta.json")
+      .map((filename) => {
+        const filePath = path.join(directoryPath, filename);
+        const fileContent = fs.readFileSync(filePath, "utf8");
+        const { data, content } = matter(fileContent);
+
+        return {
+          meta: data as BlogMeta,
+          content,
+          slug: path.join(dir, filename).replace(/\.mdx?$/, ""),
+        };
+      });
+
+    blogs = blogs.concat(dirBlogs);
+  }
 
   return blogs;
 }
@@ -87,7 +100,7 @@ export default async function generateRssFeed(): Promise<void> {
     const item: Item = {
       title: blog.meta?.title || blog.slug,
       description: blog.meta?.description,
-      link: `${site_url}/blogs/${blog.slug}`,
+      link: `${site_url}/${blog.slug}`,
       guid: blog.slug,
       date: validDate,
     };
