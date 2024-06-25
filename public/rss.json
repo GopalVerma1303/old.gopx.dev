@@ -1,6 +1,6 @@
 {
     "version": "https://jsonfeed.org/version/1",
-    "title": "Gopal Verma | @bettercallgopal",
+    "title": "Gopal Verma | gopx.dev",
     "home_page_url": "http://localhost:3000",
     "feed_url": "http://localhost:3000/rss.json",
     "description": "I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.",

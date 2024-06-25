@@ -16,7 +16,7 @@ import Logo from "@/components/Logo";
 
 const logo = (
   <>
-    <Logo name="@bettercallgopal" initials="GV" />
+    <Logo name="www.gopx.dev" initials="GV" />
   </>
 );
 
@@ -30,7 +30,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     if (asPath !== "/") {
       return {
-        titleTemplate: "%s - @bettercallgopal",
+        titleTemplate: "%s - gopx.dev",
       };
     }
   },
@@ -59,22 +59,22 @@ const config: DocsThemeConfig = {
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
-        <meta name="twitter:site:domain" content="bettercallgopal.vercel.app" />
-        <meta name="twitter:url" content="https://bettercallgopal.vercel.app" />
+        <meta name="twitter:site:domain" content="gopx.dev" />
+        <meta name="twitter:url" content="https://gopx.dev" />
         <meta
           name="twitter:description"
           content={frontMatter.description ? frontMatter.description : " "}
         />
         <meta
           name="twitter:title"
-          content={title ? title + " – @bettercallgopal" : "@bettercallgopal"}
+          content={title ? title + " – gopx.dev" : "gopx.dev"}
         />
         <meta
           name="og:title"
-          content={title ? title + " – @bettercallgopal" : "@bettercallgopal"}
+          content={title ? title + " – gopx.dev" : "gopx.dev"}
         />
         <meta property="og:image" content={socialCard} />
-        <meta name="apple-mobile-web-app-title" content="@bettercallgopal" />
+        <meta name="apple-mobile-web-app-title" content="gopx.dev" />
         <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" type="image/png" />
         <link
@@ -125,14 +125,14 @@ const config: DocsThemeConfig = {
               src={LOGO_FOR_LIGHT}
               height={200}
               width={200}
-              alt="@bettercallgopal"
+              alt="gopx.dev"
             />
             <Image
               className="hidden dark:block opacity-70"
               src={LOGO_FOR_DARK}
               height={200}
               width={200}
-              alt="@bettercallgopal"
+              alt="gopx.dev"
             />
           </a>
         </div>

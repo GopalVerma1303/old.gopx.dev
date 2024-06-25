@@ -7,16 +7,16 @@ export type SocialProfile = {
 
 const SOCIAL_MEDIA_LINKS: Record<string, SocialProfile> = {
   website: {
-    username: "bettercallgopal",
-    link: "https://bettercallgopal.vercel.app/",
+    username: "gopx.dev",
+    link: "https://gopx.dev",
   },
   github: {
-    username: "bettercallgopal",
-    link: "https://github.com/GopalVerma1303/bettercallgopal",
+    username: "gopx.dev",
+    link: "https://github.com/GopalVerma1303/gopx.dev",
   },
   github_docsRepositoryBase: {
-    username: "bettercallgopal",
-    link: "https://github.com/GopalVerma1303/bettercallgopal/tree/main",
+    username: "gopx.dev",
+    link: "https://github.com/GopalVerma1303/gopx.dev/tree/main",
   },
   discord: {
     username: "codedeployingsquad",

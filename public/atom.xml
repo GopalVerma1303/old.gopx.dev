@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
-    <title>Gopal Verma | @bettercallgopal</title>
-    <updated>2024-06-25T06:59:23.831Z</updated>
+    <title>Gopal Verma | gopx.dev</title>
+    <updated>2024-06-25T18:06:56.296Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:3000"/>
     <link rel="self" href="http://localhost:3000/atom.xml"/>

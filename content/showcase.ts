@@ -9,7 +9,7 @@ export type ShowcaseItem = {
 const FIRE_WORKS: any[] = [
   {
     title: "My Devsite",
-    href: "https://github.com/GopalVerma1303/bettercallgopal",
+    href: "https://github.com/GopalVerma1303/gopx.dev",
     img: "/showcase/bcg.png",
   },
   {

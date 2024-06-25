@@ -6,6 +6,7 @@ type: posts
 
 import Link from 'next/link'
 import { getPagesUnderRoute } from 'nextra/context'
+import { format } from 'date-fns'  // Importing date-fns format function
 
 export function BlogHeader() {
   return (
@@ -22,6 +23,10 @@ export function BlogHeader() {
 
 export function BlogIndex() {
   return getPagesUnderRoute('/blogs').map(page => {
+    const formattedDate = page.frontMatter?.date
+      ? format(new Date(page.frontMatter.date), 'MMMM do, yyyy') // Formatting the date
+      : null;
+
     return (
       <div key={page.route} className="mb-10">
         <Link
@@ -37,8 +42,8 @@ export function BlogIndex() {
             <Link href={page.route}>{'Read more →'}</Link>
           </span>
         </p>
-        {page.frontMatter?.date ? (
-          <p className="opacity-50 text-sm">{page.frontMatter.date}</p>
+        {formattedDate ? (
+          <p className="opacity-50 text-sm">{formattedDate}</p>
         ) : null}
       </div>
     )

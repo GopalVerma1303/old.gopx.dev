@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Gopal Verma | @bettercallgopal</title>
+        <title>Gopal Verma | gopx.dev</title>
         <link>http://localhost:3000</link>
         <description>I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.</description>
-        <lastBuildDate>Tue, 25 Jun 2024 06:59:23 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 25 Jun 2024 18:06:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
-            <title>Gopal Verma | @bettercallgopal</title>
+            <title>Gopal Verma | gopx.dev</title>
             <url>http://localhost:3000/logo.png</url>
             <link>http://localhost:3000</link>
         </image>

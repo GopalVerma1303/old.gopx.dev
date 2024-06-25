@@ -8,7 +8,7 @@ Disallow: /termsconditions
 Disallow: /privacypolicy
 
 # Host
-Host: https://bettercallgopal.vercel.app
+Host: https://gopx.dev
 
 # Sitemaps
-Sitemap: https://bettercallgopal.vercel.app/sitemap.xml
+Sitemap: https://gopx.dev/sitemap.xml
