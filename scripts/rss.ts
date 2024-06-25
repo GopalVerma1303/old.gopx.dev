@@ -48,7 +48,9 @@ async function getBlogData(): Promise<Blog[]> {
         return {
           meta: data as BlogMeta,
           content,
-          slug: path.join(dir, filename).replace(/\.mdx?$/, ""),
+          slug: path
+            .join(dir.replace(/^pages\//, ""), filename)
+            .replace(/\.mdx?$/, ""),
         };
       });
 

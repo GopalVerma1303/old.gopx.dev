@@ -4,7 +4,7 @@
         <title>Gopal Verma | @bettercallgopal</title>
         <link>http://localhost:3000</link>
         <description>I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.</description>
-        <lastBuildDate>Tue, 25 Jun 2024 06:24:33 GMT</lastBuildDate>
+        <lastBuildDate>Tue, 25 Jun 2024 06:59:23 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,50 +15,50 @@
         <copyright>All rights reserved 2024, Gopal Verma</copyright>
         <item>
             <title><![CDATA[Renaming existing Git Remote]]></title>
-            <link>http://localhost:3000/pages/blogs/renaming-git-remote</link>
-            <guid>pages/blogs/renaming-git-remote</guid>
+            <link>http://localhost:3000/blogs/renaming-git-remote</link>
+            <guid>blogs/renaming-git-remote</guid>
             <pubDate>Fri, 15 Dec 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[How do I rename an existing Git Remote? ᛦ]]></description>
         </item>
         <item>
             <title><![CDATA[Webdev notes]]></title>
-            <link>http://localhost:3000/pages/notebooks/web/web-note</link>
-            <guid>pages/notebooks/web/web-note</guid>
+            <link>http://localhost:3000/notebooks/web/web-note</link>
+            <guid>notebooks/web/web-note</guid>
             <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[webdev dis]]></description>
         </item>
         <item>
             <title><![CDATA[Notes for web3]]></title>
-            <link>http://localhost:3000/pages/notebooks/web3/note</link>
-            <guid>pages/notebooks/web3/note</guid>
+            <link>http://localhost:3000/notebooks/web3/note</link>
+            <guid>notebooks/web3/note</guid>
             <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Discriptions]]></description>
         </item>
         <item>
             <title><![CDATA[appdev notes]]></title>
-            <link>http://localhost:3000/pages/notebooks/mobile/app-note</link>
-            <guid>pages/notebooks/mobile/app-note</guid>
+            <link>http://localhost:3000/notebooks/mobile/app-note</link>
+            <guid>notebooks/mobile/app-note</guid>
             <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[appdev notes disc]]></description>
         </item>
         <item>
             <title><![CDATA[How to run Ollama locally from an external drive?]]></title>
-            <link>http://localhost:3000/pages/notebooks/ai/ollama-external</link>
-            <guid>pages/notebooks/ai/ollama-external</guid>
+            <link>http://localhost:3000/notebooks/ai/ollama-external</link>
+            <guid>notebooks/ai/ollama-external</guid>
             <pubDate>Fri, 21 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Giving users full control over their data and model deployment.]]></description>
         </item>
         <item>
             <title><![CDATA[Renaming git remote]]></title>
-            <link>http://localhost:3000/pages/notebooks/misc/renaming-git-remote</link>
-            <guid>pages/notebooks/misc/renaming-git-remote</guid>
+            <link>http://localhost:3000/notebooks/misc/renaming-git-remote</link>
+            <guid>notebooks/misc/renaming-git-remote</guid>
             <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[How do I rename an existing Git Remote? ᛦ]]></description>
         </item>
         <item>
             <title><![CDATA[How to solve this Git error?]]></title>
-            <link>http://localhost:3000/pages/notebooks/misc/divergent-branches-reconcile</link>
-            <guid>pages/notebooks/misc/divergent-branches-reconcile</guid>
+            <link>http://localhost:3000/notebooks/misc/divergent-branches-reconcile</link>
+            <guid>notebooks/misc/divergent-branches-reconcile</guid>
             <pubDate>Wed, 19 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[You have divergent branches and need to specify how to reconcile them.]]></description>
         </item>
