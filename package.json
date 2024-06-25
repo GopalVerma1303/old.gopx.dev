@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "rss:build": "bun run scripts/rss.ts",
-    "postbuild": "next-sitemap"
+    "postbuild": "next-sitemap && bun run rss:build"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.0",

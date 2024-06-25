@@ -63,7 +63,6 @@ export default async function generateRssFeed(): Promise<void> {
     process.env.NODE_ENV === "development"
       ? "http://localhost:3000"
       : siteConfig.siteUrl;
-
   const feedOptions: FeedOptions = {
     title: `Gopal Verma | ${siteConfig.name}`,
     description:
