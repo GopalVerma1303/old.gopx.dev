@@ -1,10 +1,10 @@
 ---
 title: Showcase
-description: Project Gallery - A curated showcase of my works 📺
+description: Project Gallery - A curated showcase of my works, collaborations and job positions 📺
 ---
 
 import { Cards } from 'nextra/components'
-import {WORKS, COLLABORATIONS, FIRE_WORKS} from '@/content/showcase'
+import {WORKS, COLLABORATIONS, FIRE_WORKS, JOBS, CONTRIBUTIONS} from '@/content/showcase'
 import Image from 'next/image'
 
 export function ShowcaseHeader() {
@@ -22,7 +22,7 @@ export function ShowcaseHeader() {
 
 <ShowcaseHeader />
 
-<p className="text-xl font-bold mb-4">🔥 Works</p>
+<p className="text-xl font-bold mb-4">🔥ing </p>
 
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 border-b border-gray-400 border-opacity-20 mb-16 pb-8">
   {
@@ -64,6 +64,36 @@ export function ShowcaseHeader() {
    ))
   }
 </div>
+
+<p className="text-xl font-bold mb-4">Contributions</p>
+
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 border-b border-gray-400 border-opacity-20 mb-16 pb-8">
+  {
+    CONTRIBUTIONS.map((work) => (
+    <Cards>
+      <ShowcaseCard title={work.title} href={work.href} >
+        <Image src={work.img} width={500} height={500} />
+      </ShowcaseCard>
+    </Cards> 
+   ))
+  }
+</div>
+
+
+<p className="text-xl font-bold mb-4">Jobs</p>
+
+<div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 border-b border-gray-400 border-opacity-20 mb-16 pb-8">
+  {
+    JOBS.map((work) => (
+    <Cards>
+      <ShowcaseCard title={work.title} href={work.href} >
+        <Image src={work.img} width={500} height={500} />
+      </ShowcaseCard>
+    </Cards> 
+   ))
+  }
+</div>
+
 
 export const ShowcaseCard = Object.assign(
   // Copy card component and add default props

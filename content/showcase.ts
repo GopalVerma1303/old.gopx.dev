@@ -95,4 +95,20 @@ const COLLABORATIONS: any[] = [
   },
 ];
 
-export { WORKS, COLLABORATIONS, FIRE_WORKS };
+const CONTRIBUTIONS: any[] = [
+  {
+    title: "Rocket.Chat.ReactNative",
+    href: "https://github.com/RocketChat/Rocket.Chat.ReactNative/pulls?q=is%3Apr+author%3Agopalverma1303",
+    img: "https://opengraph.githubassets.com/1/RocketChat/Rocket.Chat.ReactNative",
+  },
+];
+
+const JOBS: any[] = [
+  {
+    title: "SDE Intern @BHEL",
+    href: "/showcase/bhel",
+    img: "/showcase/bhel.png",
+  },
+];
+
+export { CONTRIBUTIONS, WORKS, COLLABORATIONS, FIRE_WORKS, JOBS };
