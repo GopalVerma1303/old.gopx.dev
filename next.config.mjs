@@ -1,4 +1,5 @@
 import nextra from "nextra";
+import withPWA from "next-pwa";
 
 const withNextra = nextra({
   theme: "nextra-theme-docs",
@@ -10,7 +11,7 @@ const withNextra = nextra({
   defaultShowCopyCode: true,
 });
 
-export default withNextra({
+const nextConfig = {
   images: {
     domains: [
       "bettercallgopal.vercel.app",
@@ -23,7 +24,6 @@ export default withNextra({
   },
   reactStrictMode: true,
   eslint: {
-    // ESLint behaves weirdly in this monorepo.
     ignoreDuringBuilds: true,
   },
   redirects: () => [
@@ -40,16 +40,23 @@ export default withNextra({
   ],
   webpack(config) {
     const allowedSvgRegex = /components\/icons\/.+\.svg$/;
-
     const fileLoaderRule = config.module.rules.find((rule) =>
       rule.test?.test?.(".svg"),
     );
     fileLoaderRule.exclude = allowedSvgRegex;
-
     config.module.rules.push({
       test: allowedSvgRegex,
       use: ["@svgr/webpack"],
     });
     return config;
   },
+};
+
+const withPWAConfig = withPWA({
+  dest: "public",
+  disable: process.env.NODE_ENV === "development",
+  register: true,
+  skipWaiting: true,
 });
+
+export default withPWAConfig(withNextra(nextConfig));
