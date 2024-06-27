@@ -1,0 +1,12 @@
+import React from 'react';
+import Image from 'next/image';
+import HEADER_IMG from '@/public/showcase/bhel.png';
+import JobTable from '@/components/JobTable';
+import { BHEL } from '@/content/jobs.ts';
+
+<br />
+<Image src={HEADER_IMG} alt="bhel" className="rounded-lg" />
+<br />
+<br />
+<JobTable job={BHEL} themeColor="yellow" />
+

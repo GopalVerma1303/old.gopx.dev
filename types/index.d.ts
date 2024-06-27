@@ -14,3 +14,14 @@ export type Site = {
     github: string;
   };
 };
+
+export interface Job {
+  officialName: string;
+  website: string;
+  industryType: string;
+  location: string;
+  duration: string;
+  position: string;
+  techStack: string;
+  highlights: string;
+}

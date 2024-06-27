@@ -8,19 +8,19 @@ export type ShowcaseItem = {
 
 const FIRE_WORKS: any[] = [
   {
-    title: "My Devsite",
+    title: "gopx.dev",
     href: "https://github.com/GopalVerma1303/gopx.dev",
-    img: "/showcase/bcg.png",
+    img: "https://bettercallgopal.vercel.app/og.jpeg",
   },
   {
     title: "Kitchensink RNR",
     href: "https://github.com/GopalVerma1303/KitchenSinkRNR",
-    img: "/showcase/kitchensinkrnr.png",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/KitchenSinkRNR",
   },
   {
     title: "SquadBook",
     href: "https:github.com/CodeDeployingSquad/SquadBook",
-    img: "/showcase/squadbook.png",
+    img: "https://opengraph.githubassets.com/1/CodeDeployingSquad/SquadBook",
   },
 ];
 
@@ -90,7 +90,7 @@ const COLLABORATIONS: any[] = [
   },
   {
     title: "Ghai Group",
-    href: "/showcase/ghai-group",
+    href: "/showcase/ghai",
     img: "/showcase/ghai.png",
   },
 ];
@@ -100,6 +100,11 @@ const CONTRIBUTIONS: any[] = [
     title: "Rocket.Chat.ReactNative",
     href: "https://github.com/RocketChat/Rocket.Chat.ReactNative/pulls?q=is%3Apr+author%3Agopalverma1303",
     img: "https://opengraph.githubassets.com/1/RocketChat/Rocket.Chat.ReactNative",
+  },
+  {
+    title: "Would-You-Bot/website",
+    href: "https://github.com/Would-You-Bot/website/pulls?q=is%3Apr+author%3Agopalverma1303",
+    img: "https://opengraph.githubassets.com/1/Would-You-Bot/website",
   },
 ];
 

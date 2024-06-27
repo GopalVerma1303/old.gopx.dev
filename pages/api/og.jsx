@@ -74,7 +74,7 @@ export default async function (req) {
             src={"https://bettercallgopal.vercel.app/people/gopalverma.png"}
             alt="@bettercallgopal logo"
           />
-          Gopal Verma (@bettercallgopal)
+          Gopal Verma - www.gopx.dev
         </p>
         <h1
           style={{

@@ -140,6 +140,10 @@ const config: DocsThemeConfig = {
           <p>
             Build with ♥ by <span className="font-bold">Gopal Verma</span>
           </p>
+          <p>
+            © 2024 <span className="font-bold">Gopal Verma</span> . All Rights
+            Reserved.
+          </p>
           <p>𐄷 MIT License</p>
         </div>
       </div>
