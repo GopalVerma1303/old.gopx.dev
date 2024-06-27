@@ -8,13 +8,11 @@
     "start": "next start",
     "lint": "next lint",
     "rss:build": "bun run scripts/rss.ts",
-    "postbuild": "next-sitemap && bun run rss:build"
+    "postbuild": "next-sitemap && bun run rss:build",
+    "remove:dsstore": "find . -name .DS_Store -print0 | xargs -0 git rm -f --ignore-unmatch"
   },
   "dependencies": {
     "@calcom/embed-react": "^1.5.0",
-    "@react-three/drei": "^9.106.0",
-    "@react-three/fiber": "^8.16.8",
-    "@tabler/icons-react": "^3.5.0",
     "@vercel/og": "^0.6.2",
     "classnames": "^2.5.1",
     "clsx": "^2.1.1",
