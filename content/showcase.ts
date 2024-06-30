@@ -18,9 +18,9 @@ const FIRE_WORKS: any[] = [
     img: "https://opengraph.githubassets.com/1/GopalVerma1303/KitchenSinkRNR",
   },
   {
-    title: "SquadBook",
-    href: "https:github.com/CodeDeployingSquad/SquadBook",
-    img: "https://opengraph.githubassets.com/1/CodeDeployingSquad/SquadBook",
+    title: "Squadbook",
+    href: "https:github.com/GopalVerma1303/squadbook",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/squadbook",
   },
 ];
 
@@ -49,16 +49,6 @@ const WORKS: any[] = [
     title: "Thirdfunding",
     href: "https://github.com/GopalVerma1303/thirdfunding",
     img: "/showcase/thirdfunding.png",
-  },
-  {
-    title: "VogueGenie",
-    href: "https://github.com/GopalVerma1303/voguegenie",
-    img: "/showcase/voguegenie.png",
-  },
-  {
-    title: "Unite",
-    href: "https://github.com/GopalVerma1303/Stimulus-Unite",
-    img: "/showcase/unite.png",
   },
   {
     title: "Pictrovert",
@@ -105,6 +95,21 @@ const CONTRIBUTIONS: any[] = [
     title: "Would-You-Bot/website",
     href: "https://github.com/Would-You-Bot/website/pulls?q=is%3Apr+author%3Agopalverma1303",
     img: "https://opengraph.githubassets.com/1/Would-You-Bot/website",
+  },
+  {
+    title: "CDS/SquadBook",
+    href: "https:github.com/CodeDeployingSquad/SquadBook/commits?author%3Agopalverma1303",
+    img: "https://opengraph.githubassets.com/1/CodeDeployingSquad/SquadBook",
+  },
+  {
+    title: "VogueGenie",
+    href: "https://github.com/GopalVerma1303/voguegenie/commits?author=GopalVerma1303",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/voguegenie",
+  },
+  {
+    title: "Unite",
+    href: "https://github.com/sparsh44/ideathon_Stimulus/pulls?q=is%3Apr+author%3Agopalverma1303",
+    img: "https://opengraph.githubassets.com/1/sparsh44/ideathon_Stimulus",
   },
 ];
 
