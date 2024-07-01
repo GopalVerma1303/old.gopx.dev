@@ -13,14 +13,9 @@ const FIRE_WORKS: any[] = [
     img: "https://bettercallgopal.vercel.app/og.jpeg",
   },
   {
-    title: "Kitchensink RNR",
-    href: "https://github.com/GopalVerma1303/KitchenSinkRNR",
-    img: "https://opengraph.githubassets.com/1/GopalVerma1303/KitchenSinkRNR",
-  },
-  {
     title: "Squadbook",
-    href: "https:github.com/GopalVerma1303/squadbook",
-    img: "https://opengraph.githubassets.com/1/GopalVerma1303/squadbook",
+    href: "https:github.com/GopalVerma1303/Squadbook",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/Squadbook",
   },
 ];
 
@@ -39,6 +34,16 @@ const WORKS: any[] = [
     title: "Old Devsite",
     href: "https://github.com/GopalVerma1303/portfolio",
     img: "/showcase/old-devsite.png",
+  },
+  {
+    title: "expo-responsive-layout",
+    href: "https://github.com/GopalVerma1303/expo-responsive-layout",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/expo-responsive-layout",
+  },
+  {
+    title: "Kitchensink RNR",
+    href: "https://github.com/GopalVerma1303/KitchenSinkRNR",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/KitchenSinkRNR",
   },
   {
     title: "GitHub Repo Tree Generator",
@@ -97,9 +102,9 @@ const CONTRIBUTIONS: any[] = [
     img: "https://opengraph.githubassets.com/1/Would-You-Bot/website",
   },
   {
-    title: "CDS/SquadBook",
-    href: "https:github.com/CodeDeployingSquad/SquadBook/commits?author%3Agopalverma1303",
-    img: "https://opengraph.githubassets.com/1/CodeDeployingSquad/SquadBook",
+    title: "Squadbook",
+    href: "https:github.com/CodeDeployingSquad/Squadbook/commits?author%3Agopalverma1303",
+    img: "https://opengraph.githubassets.com/1/CodeDeployingSquad/Squadbook",
   },
   {
     title: "VogueGenie",
