@@ -37,11 +37,12 @@ const config: DocsThemeConfig = {
   logo,
   head: function useHead() {
     const { title, frontMatter } = useConfig();
-    const { route } = useRouter();
-    const socialCard =
-      route === "/" || !title
-        ? `${SOCIAL_MEDIA_LINKS.website.link}/og.jpeg`
-        : `${SOCIAL_MEDIA_LINKS.website.link}/api/og?title=${title}&description=${frontMatter.description}`;
+    const { asPath } = useRouter();
+    const isRootPath = asPath === "/";
+    
+    const socialCard = isRootPath
+      ? `${SOCIAL_MEDIA_LINKS.website.link}/og.jpeg`
+      : `${SOCIAL_MEDIA_LINKS.website.link}/api/og?title=${encodeURIComponent(title || '')}&description=${encodeURIComponent(frontMatter.description || '')}`;
 
     return (
       <>
@@ -55,25 +56,26 @@ const config: DocsThemeConfig = {
         />
         <meta
           name="og:description"
-          content={frontMatter.description ? frontMatter.description : " "}
+          content={frontMatter.description || "Gopal Verma's devsite for sharing code, blogs and projects!"}
         />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:image" content={socialCard} />
         <meta name="twitter:site:domain" content="gopx.dev" />
-        <meta name="twitter:url" content="https://gopx.dev" />
+        <meta name="twitter:url" content={`https://gopx.dev${asPath}`} />
         <meta
           name="twitter:description"
-          content={frontMatter.description ? frontMatter.description : " "}
+          content={frontMatter.description || "Gopal Verma's devsite for sharing code, blogs and projects!"}
         />
         <meta
           name="twitter:title"
-          content={title ? title + " – gopx.dev" : "gopx.dev"}
+          content={isRootPath ? "gopx.dev" : `${title} – gopx.dev`}
         />
         <meta
           name="og:title"
-          content={title ? title + " – gopx.dev" : "gopx.dev"}
+          content={isRootPath ? "gopx.dev" : `${title} – gopx.dev`}
         />
         <meta property="og:image" content={socialCard} />
+        <meta property="og:url" content={`https://gopx.dev${asPath}`} />
         <meta name="apple-mobile-web-app-title" content="gopx.dev" />
         <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" type="image/png" />
@@ -113,7 +115,7 @@ const config: DocsThemeConfig = {
     text: (
       <div className="flex w-full flex-col items-center">
         <div>
-          <a
+          
             className="flex items-center gap-1 text-current"
             target="_blank"
             rel="noopener noreferrer"
@@ -157,9 +159,6 @@ const config: DocsThemeConfig = {
   },
   toc: {
     backToTop: true,
-    // extraContent: (
-    //   <img alt="placeholder cat" src="https://placekitten.com/g/300/200" />
-    // ),
   },
 };
 
