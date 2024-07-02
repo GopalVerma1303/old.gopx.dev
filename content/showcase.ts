@@ -14,7 +14,7 @@ const FIRE_WORKS: any[] = [
   },
   {
     title: "Squadbook",
-    href: "https:github.com/GopalVerma1303/Squadbook",
+    href: "https://github.com/GopalVerma1303/Squadbook",
     img: "https://opengraph.githubassets.com/1/GopalVerma1303/Squadbook",
   },
 ];
