@@ -1,52 +1,52 @@
 {
     "version": "https://jsonfeed.org/version/1",
     "title": "Gopal Verma | gopx.dev",
-    "home_page_url": "https://gopx.dev",
-    "feed_url": "https://gopx.dev/rss.json",
+    "home_page_url": "http://localhost:3000",
+    "feed_url": "http://localhost:3000/rss.json",
     "description": "I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.",
-    "icon": "https://gopx.dev/logo.png",
+    "icon": "http://localhost:3000/logo.png",
     "items": [
         {
-            "url": "https://gopx.dev/blogs/renaming-git-remote",
+            "url": "http://localhost:3000/blogs/renaming-git-remote",
             "title": "Renaming existing Git Remote",
             "summary": "How do I rename an existing Git Remote? ᛦ",
             "date_modified": "2023-12-15T00:00:00.000Z"
         },
         {
-            "url": "https://gopx.dev/notebooks/web/web-note",
+            "url": "http://localhost:3000/notebooks/web/web-note",
             "title": "Webdev notes",
             "summary": "webdev dis",
             "date_modified": "2024-06-24T00:00:00.000Z"
         },
         {
-            "url": "https://gopx.dev/notebooks/web3/note",
+            "url": "http://localhost:3000/notebooks/web3/note",
             "title": "Notes for web3",
             "summary": "Discriptions",
             "date_modified": "2024-06-24T00:00:00.000Z"
         },
         {
-            "url": "https://gopx.dev/notebooks/mobile/app-note",
+            "url": "http://localhost:3000/notebooks/mobile/app-note",
             "title": "appdev notes",
             "summary": "appdev notes disc",
             "date_modified": "2024-06-24T00:00:00.000Z"
         },
         {
-            "url": "https://gopx.dev/notebooks/ai/ollama-external",
+            "url": "http://localhost:3000/notebooks/ai/ollama-external",
             "title": "How to run Ollama locally from an external drive?",
             "summary": "Giving users full control over their data and model deployment.",
             "date_modified": "2024-06-21T00:00:00.000Z"
         },
         {
-            "url": "https://gopx.dev/notebooks/misc/divergent-branches-reconcile",
-            "title": "How to solve this Git error?",
-            "summary": "You have divergent branches and need to specify how to reconcile them.",
-            "date_modified": "2024-06-19T00:00:00.000Z"
-        },
-        {
-            "url": "https://gopx.dev/notebooks/misc/renaming-git-remote",
+            "url": "http://localhost:3000/notebooks/misc/renaming-git-remote",
             "title": "Renaming git remote",
             "summary": "How do I rename an existing Git Remote? ᛦ",
             "date_modified": "2024-06-01T00:00:00.000Z"
+        },
+        {
+            "url": "http://localhost:3000/notebooks/misc/divergent-branches-reconcile",
+            "title": "How to solve this Git error?",
+            "summary": "You have divergent branches and need to specify how to reconcile them.",
+            "date_modified": "2024-06-19T00:00:00.000Z"
         }
     ]
 }
