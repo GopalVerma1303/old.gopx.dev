@@ -4,7 +4,7 @@
         <title>Gopal Verma | gopx.dev</title>
         <link>http://localhost:3000</link>
         <description>I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.</description>
-        <lastBuildDate>Fri, 05 Jul 2024 04:55:15 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Jul 2024 07:34:26 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -54,6 +54,13 @@
             <guid>notebooks/misc/renaming-git-remote</guid>
             <pubDate>Sat, 01 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[How do I rename an existing Git Remote? ᛦ]]></description>
+        </item>
+        <item>
+            <title><![CDATA[GitHub Templates]]></title>
+            <link>http://localhost:3000/notebooks/misc/gh-templates</link>
+            <guid>notebooks/misc/gh-templates</guid>
+            <pubDate>Fri, 05 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Templates for bug reports, commits, issues, PRs, enhancement/feature requests 📄]]></description>
         </item>
         <item>
             <title><![CDATA[How to solve this Git error?]]></title>

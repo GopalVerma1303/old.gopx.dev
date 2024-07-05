@@ -43,6 +43,12 @@
             "date_modified": "2024-06-01T00:00:00.000Z"
         },
         {
+            "url": "http://localhost:3000/notebooks/misc/gh-templates",
+            "title": "GitHub Templates",
+            "summary": "Templates for bug reports, commits, issues, PRs, enhancement/feature requests 📄",
+            "date_modified": "2024-07-05T00:00:00.000Z"
+        },
+        {
             "url": "http://localhost:3000/notebooks/misc/divergent-branches-reconcile",
             "title": "How to solve this Git error?",
             "summary": "You have divergent branches and need to specify how to reconcile them.",

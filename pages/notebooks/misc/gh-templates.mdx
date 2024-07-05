@@ -1,0 +1,258 @@
+---
+title: GitHub Templates
+description: Templates for bug reports, commits, issues, PRs, enhancement/feature requests 📄
+date: 2024-07-05
+---
+
+import Image from "next/image";
+import HEADER_IMG from "@/public/notebooks/misc/octocat-programming.png";
+
+# 📄 GitHub Templates
+
+<Image src={HEADER_IMG} alt="llama" className="rounded-lg mt-[20px]" />
+
+Templates for bug reports, commits, issues, PRs, enhancement/feature requests.
+
+## 🐞 Bug-Report Template
+
+```markdown filename="BUG-REPORT.md"
+
+### Overview
+
+[Provide a brief summary of the bug.]
+
+### How to Reproduce
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+4. [Include as many steps as necessary to reproduce the issue]
+
+### Environment Information
+
+- **Operating System**: Windows 10
+- **Browser**: Chrome 98.0.4758.102
+- **Application Version/Commit**: v2.1.0
+
+### Actual and Expected Behavior
+
+- **Actual**: [Describe what happened]
+- **Expected**: [Describe what you expected to happen]
+
+### Additional Context
+
+[Include any additional information that might be relevant]
+
+```
+
+## 💬 Git Commit Message Convention
+
+> This is adapted from [Angular's commit convention](https://github.com/conventional-changelog/conventional-changelog/tree/master/packages/conventional-changelog-angular).
+
+Messages must be matched by the following regex:
+
+```js
+/^(revert: )?(feat|fix|docs|style|refactor|perf|test|workflow|build|ci|chore|types|wip)(\(.+\))?: .{1,72}/;
+```
+
+<details>
+<summary>Full Message Format</summary>
+
+
+<br />
+A commit message consists of a **header**, **body** and **footer**. The header has a **type**, **scope** and **subject**:
+
+```
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+
+The **header** is mandatory and the **scope** of the header is optional.
+
+### Revert
+
+If the commit reverts a previous commit, it should begin with `revert:`, followed by the header of the reverted commit. In the body, it should say: `This reverts commit <hash>.`, where the hash is the SHA of the commit being reverted.
+
+### Type
+
+If the prefix is `feat`, `fix` or `perf`, it will appear in the changelog. However, if there is any [BREAKING CHANGE](#footer), the commit will always appear in the changelog.
+
+Other prefixes are up to your discretion. Suggested prefixes are `docs`, `chore`, `style`, `refactor`, and `test` for non-changelog related tasks.
+
+### Scope
+
+The scope could be anything specifying the place of the commit change.
+
+### Subject
+
+The subject contains a succinct description of the change:
+
+- use the imperative, present tense: "change" not "changed" nor "changes"
+- don't capitalize the first letter
+- no dot (.) at the end
+
+### Body
+
+Just as in the **subject**, use the imperative, present tense: "change" not "changed" nor "changes".
+The body should include the motivation for the change and contrast this with previous behavior.
+
+### Footer
+
+The footer should contain any information about **Breaking Changes** and is also the place to
+reference GitHub issues that this commit **Closes**.
+
+**Breaking Changes** should start with the word `BREAKING CHANGE:` with a space or two newlines. The rest of the commit message is then used for this.
+
+</details>
+
+## ⛑️ Issue Template
+
+```markdown filename="ISSUE.md"
+
+## Prerequisites
+
+Please answer the following questions for yourself before submitting an issue. **YOU MAY DELETE THE PREREQUISITES SECTION.**
+
+- [ ] I am running the latest version
+- [ ] I checked the documentation and found no answer
+- [ ] I checked to make sure that this issue has not already been filed
+- [ ] I'm reporting the issue to the correct repository (for multi-repository projects)
+
+## Issue Type
+
+[ ] Bug Report
+[ ] Feature Request
+[ ] Question
+
+## Description
+
+[Provide a clear and concise description of the issue or request. If it's a bug, describe the unexpected behavior. If it's a feature request, explain the new functionality you're proposing. For questions, clearly state your question.]
+
+## Steps to Reproduce (if applicable)
+
+1. [Step 1]
+2. [Step 2]
+3. [Step 3]
+4. [Include as many steps as necessary to reproduce the issue, if applicable]
+
+## Expected Behavior
+
+[Describe what you expected to happen.]
+
+## Actual Behavior
+
+[Describe what actually happened.]
+
+## Environment Information
+
+- **Operating System**: [e.g., Windows 10, macOS 11.3, Ubuntu 20.04]
+- **Browser (if applicable)**: [e.g., Chrome 98.0.4758.102, Firefox 98.0]
+- **Application Version/Commit (if applicable)**: [e.g., v2.1.0 or Git commit hash]
+
+## Screenshots (if applicable)
+
+[Include screenshots or images that help illustrate the issue, if applicable.]
+
+## Additional Information
+
+[Include any additional information that might be relevant to understanding or resolving the issue.]
+
+---
+
+**By submitting this issue, I confirm that I have read and understood the project's guidelines, and I believe this is not a duplicate of an existing issue.**
+
+```
+
+## 🙏 Pull-Request Template
+
+```markdown filename="PULL-REQUEST.md"
+
+## Description
+
+[Provide a brief description of the purpose of this pull request.]
+
+## Related Issues
+
+[Include links to any related issues or discussions that are addressed by this pull request.]
+
+## Changes Made
+
+[Highlight the key changes made in this pull request. This can include new features, bug fixes, improvements, etc.]
+
+## Screenshots (if applicable)
+
+[Include screenshots or gifs demonstrating the changes made, if applicable.]
+
+## Checklist
+
+- [ ] I have tested these changes locally.
+- [ ] I have updated the documentation accordingly.
+- [ ] The code follows the project's coding standards.
+- [ ] All tests pass successfully.
+- [ ] The branch is up-to-date with the base branch.
+- [ ] There are no merge conflicts.
+- [ ] I have added necessary comments to the code, especially in complex areas.
+
+## Additional Notes
+
+[Include any additional information that might be relevant for the reviewers or that explains the context of the changes.]
+
+## Reviewer Guidelines
+
+[Provide guidelines for reviewers, such as specific areas to focus on or any particular concerns.]
+
+## Definition of Done
+
+[Specify the criteria that need to be met for this pull request to be considered "done" and ready for merging.]
+
+## Closing Notes
+
+[Include any closing notes, acknowledgments, or shoutouts to contributors.]
+
+---
+
+**By submitting this pull request, I confirm that my contributions are made under the terms of the project's guidelines.**
+
+```
+
+
+## 💐 Enhancement/Feature Request Template
+
+```markdown filename="ENHANCEMENT.md"
+
+## Description
+
+[Provide a clear and concise description of the enhancement or feature you are proposing.]
+
+## Use Case
+
+[Describe the specific use case or scenario where this enhancement or feature would be beneficial.]
+
+## Proposed Solution
+
+[Outline your proposed solution for the enhancement or feature. If applicable, include code snippets, diagrams, or any other details that help convey your idea.]
+
+## Alternatives Considered
+
+[If you've considered alternative solutions, list them here with a brief explanation of why you chose the proposed solution over the alternatives.]
+
+## Benefits
+
+[Explain the benefits and value that the proposed enhancement or feature would bring to users or the project.]
+
+## Implementation Details
+
+[If you have any suggestions on how the enhancement or feature could be implemented, provide high-level implementation details. If you are unsure, you can leave this section blank.]
+
+## Additional Context
+
+[Include any additional information that might be relevant to understanding or discussing the proposed enhancement or feature.]
+
+---
+
+**By submitting this enhancement or feature request, I confirm that I have read and understood the project's guidelines, and I believe this is not a duplicate of an existing request.**
+
+```
