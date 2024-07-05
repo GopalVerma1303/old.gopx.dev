@@ -13,22 +13,22 @@
             "date_modified": "2023-12-15T00:00:00.000Z"
         },
         {
-            "url": "http://localhost:3000/notebooks/web/web-note",
-            "title": "Webdev notes",
-            "summary": "webdev dis",
-            "date_modified": "2024-06-24T00:00:00.000Z"
+            "url": "http://localhost:3000/notebooks/web/bank",
+            "title": "Web Dev Bank",
+            "summary": "Collection of useful resources for web development ♥️",
+            "date_modified": "2024-07-05T08:35:54.874Z"
         },
         {
-            "url": "http://localhost:3000/notebooks/web3/note",
-            "title": "Notes for web3",
-            "summary": "Discriptions",
-            "date_modified": "2024-06-24T00:00:00.000Z"
+            "url": "http://localhost:3000/notebooks/web3/bank",
+            "title": "Blockchain Dev Bank",
+            "summary": "Collection of useful resources for blockchain development ♥️",
+            "date_modified": "2024-07-05T08:35:54.875Z"
         },
         {
-            "url": "http://localhost:3000/notebooks/mobile/app-note",
-            "title": "appdev notes",
-            "summary": "appdev notes disc",
-            "date_modified": "2024-06-24T00:00:00.000Z"
+            "url": "http://localhost:3000/notebooks/mobile/bank",
+            "title": "Mobile Dev Bank",
+            "summary": "Collection of useful resources for mobile development ♥️",
+            "date_modified": "2024-07-05T08:35:54.875Z"
         },
         {
             "url": "http://localhost:3000/notebooks/ai/ollama-external",

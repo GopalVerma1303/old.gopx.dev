@@ -4,7 +4,7 @@
         <title>Gopal Verma | gopx.dev</title>
         <link>http://localhost:3000</link>
         <description>I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.</description>
-        <lastBuildDate>Fri, 05 Jul 2024 07:34:26 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Jul 2024 08:35:54 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -21,25 +21,25 @@
             <description><![CDATA[How do I rename an existing Git Remote? ᛦ]]></description>
         </item>
         <item>
-            <title><![CDATA[Webdev notes]]></title>
-            <link>http://localhost:3000/notebooks/web/web-note</link>
-            <guid>notebooks/web/web-note</guid>
-            <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[webdev dis]]></description>
+            <title><![CDATA[Web Dev Bank]]></title>
+            <link>http://localhost:3000/notebooks/web/bank</link>
+            <guid>notebooks/web/bank</guid>
+            <pubDate>Fri, 05 Jul 2024 08:35:54 GMT</pubDate>
+            <description><![CDATA[Collection of useful resources for web development ♥️]]></description>
         </item>
         <item>
-            <title><![CDATA[Notes for web3]]></title>
-            <link>http://localhost:3000/notebooks/web3/note</link>
-            <guid>notebooks/web3/note</guid>
-            <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[Discriptions]]></description>
+            <title><![CDATA[Blockchain Dev Bank]]></title>
+            <link>http://localhost:3000/notebooks/web3/bank</link>
+            <guid>notebooks/web3/bank</guid>
+            <pubDate>Fri, 05 Jul 2024 08:35:54 GMT</pubDate>
+            <description><![CDATA[Collection of useful resources for blockchain development ♥️]]></description>
         </item>
         <item>
-            <title><![CDATA[appdev notes]]></title>
-            <link>http://localhost:3000/notebooks/mobile/app-note</link>
-            <guid>notebooks/mobile/app-note</guid>
-            <pubDate>Mon, 24 Jun 2024 00:00:00 GMT</pubDate>
-            <description><![CDATA[appdev notes disc]]></description>
+            <title><![CDATA[Mobile Dev Bank]]></title>
+            <link>http://localhost:3000/notebooks/mobile/bank</link>
+            <guid>notebooks/mobile/bank</guid>
+            <pubDate>Fri, 05 Jul 2024 08:35:54 GMT</pubDate>
+            <description><![CDATA[Collection of useful resources for mobile development ♥️]]></description>
         </item>
         <item>
             <title><![CDATA[How to run Ollama locally from an external drive?]]></title>
