@@ -14,21 +14,21 @@
         },
         {
             "url": "http://localhost:3000/notebooks/web/bank",
-            "title": "Web Dev Bank",
+            "title": "🏦 Web Dev Bank",
             "summary": "Collection of useful resources for web development ♥️",
-            "date_modified": "2024-07-05T08:35:54.874Z"
+            "date_modified": "2024-07-05T10:07:22.275Z"
         },
         {
             "url": "http://localhost:3000/notebooks/web3/bank",
-            "title": "Blockchain Dev Bank",
+            "title": "🏦 Blockchain Dev Bank",
             "summary": "Collection of useful resources for blockchain development ♥️",
-            "date_modified": "2024-07-05T08:35:54.875Z"
+            "date_modified": "2024-07-05T10:07:22.275Z"
         },
         {
             "url": "http://localhost:3000/notebooks/mobile/bank",
-            "title": "Mobile Dev Bank",
+            "title": "🏦 Mobile Dev Bank",
             "summary": "Collection of useful resources for mobile development ♥️",
-            "date_modified": "2024-07-05T08:35:54.875Z"
+            "date_modified": "2024-07-05T10:07:22.275Z"
         },
         {
             "url": "http://localhost:3000/notebooks/ai/ollama-external",

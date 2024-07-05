@@ -4,7 +4,7 @@
         <title>Gopal Verma | gopx.dev</title>
         <link>http://localhost:3000</link>
         <description>I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.</description>
-        <lastBuildDate>Fri, 05 Jul 2024 08:35:54 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 05 Jul 2024 10:07:22 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -21,24 +21,24 @@
             <description><![CDATA[How do I rename an existing Git Remote? ᛦ]]></description>
         </item>
         <item>
-            <title><![CDATA[Web Dev Bank]]></title>
+            <title><![CDATA[🏦 Web Dev Bank]]></title>
             <link>http://localhost:3000/notebooks/web/bank</link>
             <guid>notebooks/web/bank</guid>
-            <pubDate>Fri, 05 Jul 2024 08:35:54 GMT</pubDate>
+            <pubDate>Fri, 05 Jul 2024 10:07:22 GMT</pubDate>
             <description><![CDATA[Collection of useful resources for web development ♥️]]></description>
         </item>
         <item>
-            <title><![CDATA[Blockchain Dev Bank]]></title>
+            <title><![CDATA[🏦 Blockchain Dev Bank]]></title>
             <link>http://localhost:3000/notebooks/web3/bank</link>
             <guid>notebooks/web3/bank</guid>
-            <pubDate>Fri, 05 Jul 2024 08:35:54 GMT</pubDate>
+            <pubDate>Fri, 05 Jul 2024 10:07:22 GMT</pubDate>
             <description><![CDATA[Collection of useful resources for blockchain development ♥️]]></description>
         </item>
         <item>
-            <title><![CDATA[Mobile Dev Bank]]></title>
+            <title><![CDATA[🏦 Mobile Dev Bank]]></title>
             <link>http://localhost:3000/notebooks/mobile/bank</link>
             <guid>notebooks/mobile/bank</guid>
-            <pubDate>Fri, 05 Jul 2024 08:35:54 GMT</pubDate>
+            <pubDate>Fri, 05 Jul 2024 10:07:22 GMT</pubDate>
             <description><![CDATA[Collection of useful resources for mobile development ♥️]]></description>
         </item>
         <item>

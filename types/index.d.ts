@@ -25,3 +25,15 @@ export interface Job {
   techStack: string;
   highlights: string;
 }
+
+export interface Resource {
+  title: string;
+  description: string;
+  tags: string[];
+  link: string;
+}
+
+export interface BankTableProps {
+  resources: Resource[];
+  title: string;
+}

@@ -1,18 +1,20 @@
 ---
-title: Web Dev Bank
+title: 🏦 Web Dev Bank
 description: Collection of useful resources for web development ♥️
 ---
 
 import { Callout } from 'nextra/components'
+import BankTable from '@/components/BankTable';
+import {web} from "@/content/banks/web";
 
-# Mobile Dev Bank
+# 🏦 Web Dev Bank
 Collection of useful resources for web development ♥️
 
 <Callout type="warning" emoji="💐">
   Open Source contributions are always welcome!
 </Callout>
 
-| Title | Description | Tags | Link |
-| --- | --- | --- | --- |
-| Introduction to Markdown | A simple markup language for formatting text | markdown, formatting, text | [https://www.markdownguide.org/basic-syntax/](https://www.markdownguide.org/basic-syntax/) |
-| Responsive Web Design | Techniques for creating websites that adapt to different screen sizes | web design, responsive, mobile | [https://www.w3schools.com/css/css_rwd_intro.asp](https://www.w3schools.com/css/css_rwd_intro.asp) |
+ <BankTable
+      resources={web}
+      title="Web Development Resources"
+  />
