@@ -1,3 +1,4 @@
 {
+  "bank": "Bank",
   "ollama-external": "Run Ollama externally"
 }

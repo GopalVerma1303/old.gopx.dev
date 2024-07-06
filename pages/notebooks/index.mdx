@@ -1,42 +1,56 @@
 ---
 title: 📚 Notebooks
-description: Discover code snippets and practical insights tailored for web development, app development, and other programming stuff. 
+description: Discover code snippets and practical insights tailored for web development, app development, and other programming topics.
 ---
 
-# 📚 Notebooks
-*Discover code snippets and detailed analyses in my notebooks, designed to help developers solve real-world problems efficiently.*
-
 import { Card, Cards } from 'nextra/components'
+import Link from 'next/link'
 import { GiSpiderWeb } from "react-icons/gi";
 import { MdOutlineAppShortcut } from "react-icons/md";
 import { VscSymbolMisc } from "react-icons/vsc";
 import { BsRobot } from "react-icons/bs";
 import { GoPackage } from "react-icons/go";
 
-<br />
+# 📚 Notebooks
 
-<h2 className="text-xl font-bold flex items-center mt-5 gap-2"><GiSpiderWeb className="w-5 h-5" /> Web Development</h2>
-<p className="ml-[29px] text-slate-400 mt-[10px] italic">Find essential code snippets, tutorials, and resources for HTML, CSS, JavaScript, and web frameworks.</p>
-
-<br />
-
-<h2 className="text-xl font-bold flex items-center mt-5 gap-2"><MdOutlineAppShortcut className="w-5 h-5" /> App Development</h2>
-<p className="ml-[29px] text-slate-400 mt-[10px] italic">Access code snippets, guides, and tools for native and cross-platform app development.</p>
+*Discover code snippets and detailed analyses in my notebooks, designed to help developers solve real-world problems efficiently.*
 
 <br />
 
-<h2 className="text-xl font-bold flex items-center mt-5 gap-2"><BsRobot className="w-5 h-5" /> Artifial Intelligence</h2>
-<p className="ml-[29px] text-slate-400 mt-[10px] italic">Access code snippets, tutorials, and resources for machine learning (ML) and artificial intelligence (AI) development.</p>
-
-<br />
-
-<h2 className="text-xl font-bold flex items-center mt-5 gap-2"><GoPackage className="w-5 h-5" /> Blockchain Development</h2>
-<p className="ml-[29px] text-slate-400 mt-[10px] italic">Access code snippets, tutorials, and resources for blockchain development.</p>
-
-<br />
-
-
-<h2 className="text-xl font-bold flex items-center mt-5 gap-2"><VscSymbolMisc className="w-5 h-5" /> Miscellaneous</h2>
-<p className="ml-[29px] text-slate-400 mt-[10px] italic">Explore a variety of programming resources, including programming languages, algorithms, data structures, and coding challenges.</p>
-
-
+<Cards>
+  <Card
+    icon={<GiSpiderWeb className="w-5 h-5" />}
+    title="Web Development"
+    href="/notebooks/web/bank"
+  >
+    Find essential code snippets, tutorials, and resources for HTML, CSS, JavaScript, and web frameworks.
+  </Card>
+  <Card
+    icon={<MdOutlineAppShortcut className="w-5 h-5" />}
+    title="App Development"
+    href="/notebooks/mobile/bank"
+  >
+    Access code snippets, guides, and tools for native and cross-platform app development.
+  </Card>
+  <Card
+    icon={<BsRobot className="w-5 h-5" />}
+    title="Artificial Intelligence"
+    href="/notebooks/ai/bank"
+  >
+    Access code snippets, tutorials, and resources for machine learning (ML) and artificial intelligence (AI) development.
+  </Card>
+  <Card
+    icon={<GoPackage className="w-5 h-5" />}
+    title="Blockchain Development"
+    href="/notebooks/web3/bank"
+  >
+    Access code snippets, tutorials, and resources for blockchain development.
+  </Card>
+  <Card
+    icon={<VscSymbolMisc className="w-5 h-5" />}
+    title="Versatile Resources"
+    href="/notebooks/misc/bank"
+  >
+    Explore a variety of programming resources, including programming languages, algorithms, data structures, and coding challenges.
+  </Card>
+</Cards>
