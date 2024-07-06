@@ -41,7 +41,7 @@ const BankTable: React.FC<BankTableProps> = ({ resources, title }) => {
                 {resource.tags.map((tag, tagIndex) => (
                   <span
                     key={tagIndex}
-                    className="inline-block bg-slate-200 dark:bg-gray-700 rounded-sm px-2 py-1 text-[8px] font-bold text-black dark:text-white mr-2 mb-2 uppercase"
+                    className="inline-block bg-slate-200 dark:bg-gray-700 rounded-sm px-2 py-1 text-[10px] font-bold text-black dark:text-white mr-2 mb-2 uppercase"
                   >
                     {tag}
                   </span>

@@ -16,19 +16,19 @@
             "url": "http://localhost:3000/notebooks/web/bank",
             "title": "🏦 Web Dev Bank",
             "summary": "Collection of useful resources for web development ♥️",
-            "date_modified": "2024-07-06T05:11:29.505Z"
+            "date_modified": "2024-07-06T05:28:16.671Z"
         },
         {
             "url": "http://localhost:3000/notebooks/web3/bank",
             "title": "🏦 Blockchain Dev Bank",
             "summary": "Collection of useful resources for blockchain development ♥️",
-            "date_modified": "2024-07-06T05:11:29.506Z"
+            "date_modified": "2024-07-06T05:28:16.671Z"
         },
         {
             "url": "http://localhost:3000/notebooks/mobile/bank",
             "title": "🏦 Mobile Dev Bank",
             "summary": "Collection of useful resources for mobile development ♥️",
-            "date_modified": "2024-07-06T05:11:29.506Z"
+            "date_modified": "2024-07-06T05:28:16.671Z"
         },
         {
             "url": "http://localhost:3000/notebooks/ai/ollama-external",
@@ -40,7 +40,7 @@
             "url": "http://localhost:3000/notebooks/ai/bank",
             "title": "🏦 AI Dev Bank",
             "summary": "Collection of useful resources for mobile development ♥️",
-            "date_modified": "2024-07-06T05:11:29.506Z"
+            "date_modified": "2024-07-06T05:28:16.671Z"
         },
         {
             "url": "http://localhost:3000/notebooks/misc/renaming-git-remote",
@@ -56,9 +56,9 @@
         },
         {
             "url": "http://localhost:3000/notebooks/misc/bank",
-            "title": "🏦 Versatile Dev Bank",
+            "title": "🏦 Miscellaneous Dev Bank",
             "summary": "Collection of useful resources for development ♥️",
-            "date_modified": "2024-07-06T05:11:29.506Z"
+            "date_modified": "2024-07-06T05:28:16.671Z"
         },
         {
             "url": "http://localhost:3000/notebooks/misc/divergent-branches-reconcile",
