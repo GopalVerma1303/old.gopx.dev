@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
     <title>Gopal Verma | gopx.dev</title>
-    <updated>2024-07-06T05:28:16.658Z</updated>
+    <updated>2024-07-07T17:03:56.017Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:3000"/>
     <link rel="self" href="http://localhost:3000/atom.xml"/>
@@ -21,21 +21,21 @@
         <title type="html"><![CDATA[🏦 Web Dev Bank]]></title>
         <id>http://localhost:3000/notebooks/web/bank</id>
         <link href="http://localhost:3000/notebooks/web/bank"/>
-        <updated>2024-07-06T05:28:16.671Z</updated>
+        <updated>2024-07-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Collection of useful resources for web development ♥️]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[🏦 Blockchain Dev Bank]]></title>
         <id>http://localhost:3000/notebooks/web3/bank</id>
         <link href="http://localhost:3000/notebooks/web3/bank"/>
-        <updated>2024-07-06T05:28:16.671Z</updated>
+        <updated>2024-07-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Collection of useful resources for blockchain development ♥️]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[🏦 Mobile Dev Bank]]></title>
         <id>http://localhost:3000/notebooks/mobile/bank</id>
         <link href="http://localhost:3000/notebooks/mobile/bank"/>
-        <updated>2024-07-06T05:28:16.671Z</updated>
+        <updated>2024-07-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Collection of useful resources for mobile development ♥️]]></summary>
     </entry>
     <entry>
@@ -49,7 +49,7 @@
         <title type="html"><![CDATA[🏦 AI Dev Bank]]></title>
         <id>http://localhost:3000/notebooks/ai/bank</id>
         <link href="http://localhost:3000/notebooks/ai/bank"/>
-        <updated>2024-07-06T05:28:16.671Z</updated>
+        <updated>2024-07-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Collection of useful resources for mobile development ♥️]]></summary>
     </entry>
     <entry>
@@ -70,7 +70,7 @@
         <title type="html"><![CDATA[🏦 Miscellaneous Dev Bank]]></title>
         <id>http://localhost:3000/notebooks/misc/bank</id>
         <link href="http://localhost:3000/notebooks/misc/bank"/>
-        <updated>2024-07-06T05:28:16.671Z</updated>
+        <updated>2024-07-07T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Collection of useful resources for development ♥️]]></summary>
     </entry>
     <entry>

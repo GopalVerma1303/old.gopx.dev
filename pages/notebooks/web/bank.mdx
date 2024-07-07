@@ -1,11 +1,12 @@
 ---
 title: 🏦 Web Dev Bank
 description: Collection of useful resources for web development ♥️
+date: 2024-07-07
 ---
 
 import { Callout } from 'nextra/components'
 import BankTable from '@/components/BankTable';
-import {web} from "@/content/banks/web";
+import {web, DocsBlogsGen} from "@/content/banks/web";
 
 # 🏦 Web Dev Bank
 Collection of useful resources for web development ♥️
@@ -14,7 +15,15 @@ Collection of useful resources for web development ♥️
   Open Source contributions are always welcome!
 </Callout>
 
+## Tutorials & Guides
  <BankTable
       resources={web}
+      title="Web Development Resources"
+  />
+
+
+## Static Site Generators
+ <BankTable
+      resources={DocsBlogsGen}
       title="Web Development Resources"
   />
