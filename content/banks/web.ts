@@ -171,4 +171,11 @@ export const DocsBlogsGen: Resource[] = [
     tags: ["Documentation", "Book", "GitBook"],
     link: "https://www.gitbook.com/",
   },
+  {
+    title: "Docus",
+    description:
+      "Write pages in Markdown, use Vue components and enjoy the power of Nuxt.",
+    tags: ["Documentation", "Blog", "Nuxt"],
+    link: "https://docus.dev/",
+  },
 ];
