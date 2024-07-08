@@ -7,6 +7,7 @@ type: posts
 import Link from 'next/link'
 import { getPagesUnderRoute } from 'nextra/context'
 import { format } from 'date-fns'  // Importing date-fns format function
+import GhostLabel from "@/components/GhostLabel";
 
 export function BlogHeader() {
   return (
@@ -24,7 +25,7 @@ export function BlogHeader() {
 export function BlogIndex() {
   return getPagesUnderRoute('/blogs').map(page => {
     const formattedDate = page.frontMatter?.date
-      ? format(new Date(page.frontMatter.date), 'MMM do, yyyy') // Formatting the date
+      ? format(new Date(page.frontMatter.date), 'MMM dd') // Formatting the date
       : null;
 
 return (
@@ -52,4 +53,9 @@ return (
 }
 
 <BlogHeader />
-<BlogIndex />
+
+
+<div className="relative mt-28">
+  <GhostLabel text="2024" />
+  <BlogIndex />
+</div>
