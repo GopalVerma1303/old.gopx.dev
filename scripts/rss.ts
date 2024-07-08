@@ -24,7 +24,8 @@ function isValidDate(date: Date): boolean {
 
 async function getBlogData(): Promise<Blog[]> {
   const blogDirectories = [
-    "pages/blogs",
+    "pages/blogs/2023",
+    "pages/blogs/2024",
     "pages/notebooks/web",
     "pages/notebooks/web3",
     "pages/notebooks/mobile",

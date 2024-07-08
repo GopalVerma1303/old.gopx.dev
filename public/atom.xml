@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
     <title>Gopal Verma | gopx.dev</title>
-    <updated>2024-07-08T11:47:48.437Z</updated>
+    <updated>2024-07-08T14:17:34.395Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:3000"/>
     <link rel="self" href="http://localhost:3000/atom.xml"/>
@@ -12,10 +12,45 @@
     <rights>All rights reserved 2024, Gopal Verma</rights>
     <entry>
         <title type="html"><![CDATA[Renaming existing Git Remote]]></title>
-        <id>http://localhost:3000/blogs/renaming-git-remote</id>
-        <link href="http://localhost:3000/blogs/renaming-git-remote"/>
+        <id>http://localhost:3000/blogs/2023/renaming-git-remote</id>
+        <link href="http://localhost:3000/blogs/2023/renaming-git-remote"/>
         <updated>2023-12-15T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[How do I rename an existing Git Remote? ᛦ]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[90% of devs are damn bad!]]></title>
+        <id>http://localhost:3000/blogs/2023/90pc-useless</id>
+        <link href="http://localhost:3000/blogs/2023/90pc-useless"/>
+        <updated>2023-12-16T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[90% of Programmers Are Pretty Damn Bad Programmers]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Healthy life as a Developer]]></title>
+        <id>http://localhost:3000/blogs/2023/health-for-dev</id>
+        <link href="http://localhost:3000/blogs/2023/health-for-dev"/>
+        <updated>2023-12-13T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Prioritizing Your Health as a Software Developer]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[No need to code for fun]]></title>
+        <id>http://localhost:3000/blogs/2024/not-code-4-fun</id>
+        <link href="http://localhost:3000/blogs/2024/not-code-4-fun"/>
+        <updated>2024-07-07T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Exploring the divisive opinion that programmers must code in their free time to excel]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Pair programming lowers quality]]></title>
+        <id>http://localhost:3000/blogs/2024/pair-prog-sucks</id>
+        <link href="http://localhost:3000/blogs/2024/pair-prog-sucks"/>
+        <updated>2024-07-06T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Pair Programming: A Myth of Improved Code Quality]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Minimalistic vs Noob Programmers]]></title>
+        <id>http://localhost:3000/blogs/2024/fake-minimalism</id>
+        <link href="http://localhost:3000/blogs/2024/fake-minimalism"/>
+        <updated>2024-07-08T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[Learn how to distinguish between a true minimalistic programmer and one who is just faking it.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[🏦 Web Dev Bank]]></title>

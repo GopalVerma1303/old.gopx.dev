@@ -7,10 +7,40 @@
     "icon": "http://localhost:3000/logo.png",
     "items": [
         {
-            "url": "http://localhost:3000/blogs/renaming-git-remote",
+            "url": "http://localhost:3000/blogs/2023/renaming-git-remote",
             "title": "Renaming existing Git Remote",
             "summary": "How do I rename an existing Git Remote? ᛦ",
             "date_modified": "2023-12-15T00:00:00.000Z"
+        },
+        {
+            "url": "http://localhost:3000/blogs/2023/90pc-useless",
+            "title": "90% of devs are damn bad!",
+            "summary": "90% of Programmers Are Pretty Damn Bad Programmers",
+            "date_modified": "2023-12-16T00:00:00.000Z"
+        },
+        {
+            "url": "http://localhost:3000/blogs/2023/health-for-dev",
+            "title": "Healthy life as a Developer",
+            "summary": "Prioritizing Your Health as a Software Developer",
+            "date_modified": "2023-12-13T00:00:00.000Z"
+        },
+        {
+            "url": "http://localhost:3000/blogs/2024/not-code-4-fun",
+            "title": "No need to code for fun",
+            "summary": "Exploring the divisive opinion that programmers must code in their free time to excel",
+            "date_modified": "2024-07-07T00:00:00.000Z"
+        },
+        {
+            "url": "http://localhost:3000/blogs/2024/pair-prog-sucks",
+            "title": "Pair programming lowers quality",
+            "summary": "Pair Programming: A Myth of Improved Code Quality",
+            "date_modified": "2024-07-06T00:00:00.000Z"
+        },
+        {
+            "url": "http://localhost:3000/blogs/2024/fake-minimalism",
+            "title": "Minimalistic vs Noob Programmers",
+            "summary": "Learn how to distinguish between a true minimalistic programmer and one who is just faking it.",
+            "date_modified": "2024-07-08T00:00:00.000Z"
         },
         {
             "url": "http://localhost:3000/notebooks/web/bank",

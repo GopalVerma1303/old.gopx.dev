@@ -4,7 +4,7 @@
         <title>Gopal Verma | gopx.dev</title>
         <link>http://localhost:3000</link>
         <description>I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.</description>
-        <lastBuildDate>Mon, 08 Jul 2024 11:47:48 GMT</lastBuildDate>
+        <lastBuildDate>Mon, 08 Jul 2024 14:17:34 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
@@ -15,10 +15,45 @@
         <copyright>All rights reserved 2024, Gopal Verma</copyright>
         <item>
             <title><![CDATA[Renaming existing Git Remote]]></title>
-            <link>http://localhost:3000/blogs/renaming-git-remote</link>
-            <guid>blogs/renaming-git-remote</guid>
+            <link>http://localhost:3000/blogs/2023/renaming-git-remote</link>
+            <guid>blogs/2023/renaming-git-remote</guid>
             <pubDate>Fri, 15 Dec 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[How do I rename an existing Git Remote? ᛦ]]></description>
+        </item>
+        <item>
+            <title><![CDATA[90% of devs are damn bad!]]></title>
+            <link>http://localhost:3000/blogs/2023/90pc-useless</link>
+            <guid>blogs/2023/90pc-useless</guid>
+            <pubDate>Sat, 16 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[90% of Programmers Are Pretty Damn Bad Programmers]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Healthy life as a Developer]]></title>
+            <link>http://localhost:3000/blogs/2023/health-for-dev</link>
+            <guid>blogs/2023/health-for-dev</guid>
+            <pubDate>Wed, 13 Dec 2023 00:00:00 GMT</pubDate>
+            <description><![CDATA[Prioritizing Your Health as a Software Developer]]></description>
+        </item>
+        <item>
+            <title><![CDATA[No need to code for fun]]></title>
+            <link>http://localhost:3000/blogs/2024/not-code-4-fun</link>
+            <guid>blogs/2024/not-code-4-fun</guid>
+            <pubDate>Sun, 07 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Exploring the divisive opinion that programmers must code in their free time to excel]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Pair programming lowers quality]]></title>
+            <link>http://localhost:3000/blogs/2024/pair-prog-sucks</link>
+            <guid>blogs/2024/pair-prog-sucks</guid>
+            <pubDate>Sat, 06 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Pair Programming: A Myth of Improved Code Quality]]></description>
+        </item>
+        <item>
+            <title><![CDATA[Minimalistic vs Noob Programmers]]></title>
+            <link>http://localhost:3000/blogs/2024/fake-minimalism</link>
+            <guid>blogs/2024/fake-minimalism</guid>
+            <pubDate>Mon, 08 Jul 2024 00:00:00 GMT</pubDate>
+            <description><![CDATA[Learn how to distinguish between a true minimalistic programmer and one who is just faking it.]]></description>
         </item>
         <item>
             <title><![CDATA[🏦 Web Dev Bank]]></title>

@@ -3,11 +3,42 @@ title: Blogs
 description: My technical blogs for insights on various tech topics and tutorials.
 type: posts
 ---
-
 import Link from 'next/link'
 import { getPagesUnderRoute } from 'nextra/context'
-import { format } from 'date-fns'  // Importing date-fns format function
+import { format, parseISO } from 'date-fns'
 import GhostLabel from "@/components/GhostLabel";
+
+export function ExtractBlogByYear(year) {
+  return getPagesUnderRoute(`/blogs/${year}`);
+}
+
+export function BlogRow({ page }) {
+  const formattedDate = page.frontMatter?.date
+    ? format(parseISO(page.frontMatter.date), 'MMM dd')
+    : null;
+
+  return (
+    <Link
+      href={page.route}
+      style={{ color: 'inherit', textDecoration: 'none' }}
+      className="group flex flex-col md:flex-row justify-between items-start md:items-center gap-[4px] md:gap-[12px] w-full opacity-70 hover:opacity-100 transition-opacity duration-200 ease-in-out my-[10px]"
+    >
+      <div className="flex gap-[5px] items-center">
+        <p className="text-xl group-hover:underline">{page.meta?.title || page.frontMatter?.title || page.name}</p>
+        <p className="text-xs transform transition-transform duration-200 ease-in-out group-hover:animate-flicker">{'↗'}</p>
+      </div>
+      <div className="flex gap-[8px] items-center flex-shrink-0">
+        {formattedDate && <p className="opacity-50 text-sm">{formattedDate}</p>}
+        {formattedDate && page.frontMatter?.readTime && (
+          <p className="opacity-50 text-sm">•</p>
+        )}
+        {page.frontMatter?.readTime && (
+          <p className="opacity-50 text-sm">{page.frontMatter.readTime} mins</p>
+        )}
+      </div>
+    </Link>
+  );
+}
 
 export function BlogHeader() {
   return (
@@ -15,7 +46,7 @@ export function BlogHeader() {
       <h1>
         <span className="font-bold leading-tight lg:text-5xl">Blogs</span>
       </h1>
-      <p className="italic text-center text-gray-500 dark:text-gray-400 font-space-grotesk">
+      <p className="italic text-center opacity-60 font-space-grotesk">
         Read my technical blogs for insights on various tech topics and tutorials.
       </p>
     </div>
@@ -23,39 +54,27 @@ export function BlogHeader() {
 }
 
 export function BlogIndex() {
-  return getPagesUnderRoute('/blogs').map(page => {
-    const formattedDate = page.frontMatter?.date
-      ? format(new Date(page.frontMatter.date), 'MMM dd') // Formatting the date
-      : null;
+  const currentYear = new Date().getFullYear();
+  const years = [2024, 2023];
 
-return (
-  <Link
-    href={page.route}
-    style={{ color: 'inherit', textDecoration: 'none' }}
-    className="group flex flex-col md:flex-row justify-between items-start md:items-center gap-[4px] md:gap-[12px] w-full opacity-70 hover:opacity-100 transition-opacity duration-200 ease-in-out"
-  >
-    <div className="flex gap-[5px] items-center">
-      <p className="text-xl group-hover:underline">{page.meta?.title || page.frontMatter?.title || page.name}</p>
-      <p className="text-xs transform transition-transform duration-200 ease-in-out group-hover:animate-flicker">{'↗'}</p>
+  return (
+    <div className="-mt-0">
+      {years.map(year => {
+        const blogs = ExtractBlogByYear(year);
+        if (blogs.length === 0) return null;
+
+        return (
+          <div key={year} className="relative mt-40">
+            <GhostLabel text={year.toString()} />
+            {blogs.map((page, index) => (
+              <BlogRow key={index} page={page} />
+            ))}
+          </div>
+        );
+      })}
     </div>
-    <div className="flex gap-[8px] items-center flex-shrink-0">
-      {formattedDate && <p className="opacity-50 text-sm">{formattedDate}</p>}
-      {formattedDate && page.frontMatter?.readTime && (
-        <p className="opacity-50 text-sm">•</p>
-      )}
-      {page.frontMatter?.readTime && (
-        <p className="opacity-50 text-sm">{page.frontMatter.readTime} mins</p>
-      )}
-    </div>
-  </Link>
-);
-  })
+  );
 }
 
 <BlogHeader />
-
-
-<div className="relative mt-28">
-  <GhostLabel text="2024" />
-  <BlogIndex />
-</div>
+<BlogIndex />
