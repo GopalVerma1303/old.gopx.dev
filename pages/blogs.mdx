@@ -8,15 +8,27 @@ import { getPagesUnderRoute } from 'nextra/context'
 import { format, parseISO } from 'date-fns'
 import GhostLabel from "@/components/GhostLabel";
 
-export function ExtractBlogByYear(year) {
-  return getPagesUnderRoute(`/blogs/${year}`);
+export function ExtractBlogsByYear() {
+  const allBlogs = getPagesUnderRoute('/blogs');
+  const blogsByYear = {};
+
+  allBlogs.forEach(blog => {
+    if (blog.frontMatter?.date) {
+      const year = parseISO(blog.frontMatter.date).getFullYear();
+      if (!blogsByYear[year]) {
+        blogsByYear[year] = [];
+      }
+      blogsByYear[year].push(blog);
+    }
+  });
+
+  return blogsByYear;
 }
 
 export function BlogRow({ page }) {
   const formattedDate = page.frontMatter?.date
     ? format(parseISO(page.frontMatter.date), 'MMM dd')
     : null;
-
   return (
     <Link
       href={page.route}
@@ -54,24 +66,19 @@ export function BlogHeader() {
 }
 
 export function BlogIndex() {
-  const currentYear = new Date().getFullYear();
-  const years = [2024, 2023];
+  const blogsByYear = ExtractBlogsByYear();
+  const years = Object.keys(blogsByYear).sort((a, b) => b - a);
 
   return (
     <div className="-mt-0">
-      {years.map(year => {
-        const blogs = ExtractBlogByYear(year);
-        if (blogs.length === 0) return null;
-
-        return (
-          <div key={year} className="relative mt-40">
-            <GhostLabel text={year.toString()} />
-            {blogs.map((page, index) => (
-              <BlogRow key={index} page={page} />
-            ))}
-          </div>
-        );
-      })}
+      {years.map(year => (
+        <div key={year} className="relative mt-40">
+          <GhostLabel text={year.toString()} />
+          {blogsByYear[year].map((page, index) => (
+            <BlogRow key={index} page={page} />
+          ))}
+        </div>
+      ))}
     </div>
   );
 }
