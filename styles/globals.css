@@ -55,3 +55,23 @@ code.text-\[\.9em\] {
     display: none;
   }
 }
+
+@keyframes flicker {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(20deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  75% {
+    transform: rotate(-20deg);
+  }
+}
+
+.animate-flicker {
+  animation: flicker 0.5s infinite;
+}

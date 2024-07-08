@@ -11,7 +11,7 @@ module.exports = {
         anton: ["Anton", "sans-serif"],
       },
       animation: {
-        flicker: "flicker 0.3s infinite",
+        flicker: "flicker 0.5s infinite",
         blob: "blob 7s linear infinite",
         bounce: "240ms ease 0s running bounce",
         "glow-line-horizontal":

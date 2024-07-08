@@ -24,29 +24,30 @@ export function BlogHeader() {
 export function BlogIndex() {
   return getPagesUnderRoute('/blogs').map(page => {
     const formattedDate = page.frontMatter?.date
-      ? format(new Date(page.frontMatter.date), 'MMMM do, yyyy') // Formatting the date
+      ? format(new Date(page.frontMatter.date), 'MMM do, yyyy') // Formatting the date
       : null;
 
-    return (
-      <div key={page.route} className="mb-10">
-        <Link
-          href={page.route}
-          style={{ color: 'inherit', textDecoration: 'none' }}
-          className="block font-semibold mt-8 text-2xl"
-        >
-          {page.meta?.title || page.frontMatter?.title || page.name}
-        </Link>
-        <p className="opacity-80" style={{ marginTop: '.5rem' }}>
-          {page.frontMatter?.description}{' '}
-          <span className="inline-block">
-            <Link href={page.route}>{'Read more →'}</Link>
-          </span>
-        </p>
-        {formattedDate ? (
-          <p className="opacity-50 text-sm">{formattedDate}</p>
-        ) : null}
-      </div>
-    )
+return (
+  <Link
+    href={page.route}
+    style={{ color: 'inherit', textDecoration: 'none' }}
+    className="group flex flex-col md:flex-row justify-between items-start md:items-center gap-[4px] md:gap-[12px] w-full opacity-70 hover:opacity-100 transition-opacity duration-200 ease-in-out"
+  >
+    <div className="flex gap-[5px] items-center">
+      <p className="text-xl group-hover:underline">{page.meta?.title || page.frontMatter?.title || page.name}</p>
+      <p className="text-xs transform transition-transform duration-200 ease-in-out group-hover:animate-flicker">{'↗'}</p>
+    </div>
+    <div className="flex gap-[8px] items-center flex-shrink-0">
+      {formattedDate && <p className="opacity-50 text-sm">{formattedDate}</p>}
+      {formattedDate && page.frontMatter?.readTime && (
+        <p className="opacity-50 text-sm">•</p>
+      )}
+      {page.frontMatter?.readTime && (
+        <p className="opacity-50 text-sm">{page.frontMatter.readTime} mins</p>
+      )}
+    </div>
+  </Link>
+);
   })
 }
 
