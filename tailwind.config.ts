@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       fontFamily: {
         anton: ["Anton", "sans-serif"],
+        roboto: ["Roboto Condensed", "sans-serif"],
       },
       animation: {
         flicker: "flicker 0.3s infinite",

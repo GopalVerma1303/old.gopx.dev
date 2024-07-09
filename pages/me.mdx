@@ -1,0 +1,62 @@
+---
+title: Me
+description: Who is Gopal Verma?
+---
+
+import OrgBadge from "@/components/OrgBadge";
+import WhiteLink from "@/components/WhiteLink";
+import { RiTwitterXLine } from "react-icons/ri";
+import { FaFacebook, FaInstagram, FaYoutube, FaReddit, FaLinkedin, FaQuora, FaPinterest, FaDiscord } from "react-icons/fa";
+import { BsTwitter } from "react-icons/bs";
+import SignLight from "@/public/personal/sign-white.svg"
+import SignDark from "@/public/personal/sign-black.svg"
+import Image from "next/image";
+
+<br />
+<br />
+# Gopal Verma
+Hey, I'm <span><WhiteLink text="Gopal Verma" link="https://x.com/bettercallgopal" /></span>, an indie developer, freelancer, and full-stack developer.
+
+Building <OrgBadge name="CDS" link="https://www.codedeployingsquad.tech" logo="https://www.codedeployingsquad.tech/cds_circle.png" /><OrgBadge name="gopx" link="https://www.codedeployingsquad.tech" logo="https://gopx.dev/icon-192x192.png" />  
+Creator of <OrgBadge name="gopx" link="https://www.codedeployingsquad.tech" logo="https://gopx.dev/icon-192x192.png" />  
+Maintaining <OrgBadge name="WWW-CDS" link="https://www.codedeployingsquad.tech" logo="https://www.codedeployingsquad.tech/assets/website/cdsglobe.png" /><OrgBadge name="gopx" link="https://www.codedeployingsquad.tech" logo="https://gopx.dev/icon-192x192.png" />  
+
+Find me on  
+<br />
+<div className="flex gap-4 flex-wrap">
+<WhiteLink text="Twitter" link="#" Icon={RiTwitterXLine} />  
+<WhiteLink text="Facebook" link="#" Icon={FaFacebook} />  
+<WhiteLink text="Instagram" link="#" Icon={FaInstagram} />  
+<WhiteLink text="YouTube" link="#" Icon={FaYoutube} />  
+<WhiteLink text="Reddit" link="#" Icon={FaReddit} />  
+<WhiteLink text="LinkedIn" link="#" Icon={FaLinkedin} />  
+<WhiteLink text="Quora" link="#" Icon={FaQuora} />  
+<WhiteLink text="Pinterest" link="#" Icon={FaPinterest} />  
+<WhiteLink text="Discord" link="#" Icon={FaDiscord} />
+</div>
+
+Or mail me at <WhiteLink text="vermagprofessional@gmail.com" link="#" />
+
+<br />
+<br />
+
+Thank you for taking the time to learn more about me. I'm excited to embark on this journey together and look forward to connecting with you further. Feel free to reach out if you have any questions or would like to collaborate.
+
+<br />
+<br />
+
+<div className="flex justify-end mr-[30px]">
+Thank You! <br />
+Yours Truly, <br />
+</div>
+
+<div className="flex items-end justify-end">
+  <Image 
+  src={SignLight}
+  className="w-[200px] dark:block hidden"
+  />
+  <Image 
+  src={SignDark}
+  className="w-[200px] dark:hidden"
+  />
+</div>

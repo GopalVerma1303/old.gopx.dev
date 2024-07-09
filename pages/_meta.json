@@ -32,6 +32,13 @@
       "typesetting": "article"
     }
   },
+  "me": {
+    "type": "page",
+    "title": "Me",
+    "theme": {
+      "typesetting": "default"
+    }
+  },
   "404": {
     "type": "page",
     "theme": {
