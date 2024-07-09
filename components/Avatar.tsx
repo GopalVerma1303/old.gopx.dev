@@ -1,7 +1,13 @@
 import Image from "next/image";
 import type { AuthorDetails } from "@/content/team";
 
-export function Avatar({ name, picture, xUsername }: AuthorDetails) {
+export function Avatar({
+  name,
+  picture,
+  xUsername,
+  date,
+  readTime,
+}: AuthorDetails & { date?: string; readTime?: string }) {
   return (
     <div className="flex items-center flex-shrink-0 md:justify-start">
       <div className="w-[32px] h-[32px]">
@@ -30,6 +36,9 @@ export function Avatar({ name, picture, xUsername }: AuthorDetails) {
               >
                 {`@${xUsername}`}
               </a>
+              <span className="text-[10px] ml-[5px]">
+                • {date} • {readTime} min read
+              </span>
             </dd>
           </>
         ) : null}

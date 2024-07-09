@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
     <title>Gopal Verma | gopx.dev</title>
-    <updated>2024-07-08T17:39:43.768Z</updated>
+    <updated>2024-07-09T06:54:50.548Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:3000"/>
     <link rel="self" href="http://localhost:3000/atom.xml"/>
@@ -10,6 +10,13 @@
     <logo>http://localhost:3000/logo.png</logo>
     <icon>http://localhost:3000/favicon.png</icon>
     <rights>All rights reserved 2024, Gopal Verma</rights>
+    <entry>
+        <title type="html"><![CDATA[The End of Junior Engineers]]></title>
+        <id>http://localhost:3000/blogs/end-of-je</id>
+        <link href="http://localhost:3000/blogs/end-of-je"/>
+        <updated>2024-07-09T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[The Threat of AI Taking Over Entry-Level Jobs]]></summary>
+    </entry>
     <entry>
         <title type="html"><![CDATA[No need to code for fun]]></title>
         <id>http://localhost:3000/blogs/not-code-4-fun</id>

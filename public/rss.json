@@ -7,6 +7,12 @@
     "icon": "http://localhost:3000/logo.png",
     "items": [
         {
+            "url": "http://localhost:3000/blogs/end-of-je",
+            "title": "The End of Junior Engineers",
+            "summary": "The Threat of AI Taking Over Entry-Level Jobs",
+            "date_modified": "2024-07-09T00:00:00.000Z"
+        },
+        {
             "url": "http://localhost:3000/blogs/not-code-4-fun",
             "title": "No need to code for fun",
             "summary": "Exploring the divisive opinion that programmers must code in their free time to excel",

@@ -3,7 +3,15 @@ import TURBO_TEAM from "@/content/team";
 import type { Author } from "@/content/team";
 import { Avatar } from "./Avatar";
 
-export function Authors({ authors }: { authors: Author[] }) {
+export function Authors({
+  authors,
+  date,
+  readTime,
+}: {
+  authors: Author[];
+  date: string;
+  readTime: string;
+}) {
   const validAuthors = authors.filter((author) => TURBO_TEAM[author]);
   return (
     <div className="w-full border-b border-gray-400 authors border-opacity-20">
@@ -14,7 +22,12 @@ export function Authors({ authors }: { authors: Author[] }) {
         )}
       >
         {validAuthors.map((username) => (
-          <Avatar key={username} {...TURBO_TEAM[username]} />
+          <Avatar
+            date={date}
+            readTime={readTime}
+            key={username}
+            {...TURBO_TEAM[username]}
+          />
         ))}
       </div>
     </div>
