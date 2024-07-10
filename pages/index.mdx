@@ -16,6 +16,7 @@ import docsCardDark from '../public/assets/card-1.dark.png'
 import docsCard from '../public/assets/card-1.png'
 import styles from './index.module.css'
 import {CTA} from "@/components/CTA";
+import {RESUME} from "@/content/me";
 
 <div className="home-content">
   <div className="flex justify-center items-center flex-col">
@@ -341,7 +342,7 @@ import {CTA} from "@/components/CTA";
           <h3>I do open-source projects, and freelance work, <br /> <Link href="https://github.com/gopalVerma1303/">visit my github</Link> or <Link href="#">book a call</Link></h3>
         </Feature>
         <Feature index={8} id="a11y-card" 
-          href="https://drive.google.com/file/d/1NO-hoN5dveXg65_qOUbC9vk9bIjBVn0r/view?usp=sharing"
+          href={RESUME}
           className='card-with-border' style={{
           backgroundSize: 750,
           backgroundRepeat: 'no-repeat',
@@ -356,7 +357,7 @@ import {CTA} from "@/components/CTA";
         </Feature>
         <Feature index={10} large>
           <h3>Know more...</h3>
-          <p>Discover more about my work, experience, and expertise on the <Link href="/about">About</Link> page. <br /> Dive deeper into my professional journey and see how my skills can benefit your projects.</p>
+          <p>Discover more about my work, experience, and expertise on the <Link href="/me">Me</Link> page. <br /> Dive deeper into my professional journey and see how my skills can benefit your projects.</p>
           <p className="subtitle"><Link className="!no-underline" href="/notebooks">Start with Notebooks →</Link></p>
         </Feature>
       </Features>

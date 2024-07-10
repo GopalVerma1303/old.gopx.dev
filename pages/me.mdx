@@ -11,7 +11,7 @@ import { BsTwitter } from "react-icons/bs";
 import SignLight from "@/public/personal/sign-white.svg"
 import SignDark from "@/public/personal/sign-black.svg"
 import Image from "next/image";
-import {WORKING, BUILDING, MAINTAINING, CORE_TEAM} from "@/content/me"
+import {RESUME, WORKING, STUDY, BUILDING, MAINTAINING, CORE_TEAM} from "@/content/me"
 
 
 <br />
@@ -23,15 +23,18 @@ Working at {WORKING.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w.link
 Building {BUILDING.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w.link} logo={w.logo} />))}  
 Maintaining {MAINTAINING.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w.link} logo={w.logo} />))}  
 Core team of {CORE_TEAM.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w.link} logo={w.logo} />))}  
+Studied at {STUDY.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w.link} logo={w.logo} />))}  
 
-Find my <WhiteLink text="Stats-&-Streaks" link="/stats" />.
+Find my <WhiteLink text="Stats-&-Streaks" link="/stats" />. Find my <WhiteLink text="resume" link={RESUME} />.
 
 "*Building something people want*" is where my passion lies. You can find all my projects, contributions and collaborations here on my <WhiteLink text="showcase" link="/showcase" />.
 
 I write <WhiteLink text="blog posts" link="/blogs" /> about programming, tech, life etc. Occasionally, I make videos for <WhiteLink text="YouTube" link="https://www.youtube.com/channel/UCgfABFAZox1a26_iyyUuYeg" />.  
-You can discover my code snippets, notes, mindmaps, resources and detailed analyses in my interactive <WhiteLink text="notebooks" link="/notebooks" />, designed to help learners and developers solve real-world problems.
+You can discover my code snippets, notes, mindmaps, resources and detailed analyses in my interactive <WhiteLink text="notebooks." link="/notebooks" />
 
-Outside of programming, being a mountain guy from <WhiteLink text="Uttarakhand" link="https://maps.app.goo.gl/pWWe9LMDAvabPUVL6" />, I enjoy mountain trekking and exploring valleys. Some of my memories can be found on <WhiteLink text="Pintrest" link="https://www.pinterest.com/GopalVerma1303/" />. Right now I live in <WhiteLink text="Chandigarh" link="https://maps.app.goo.gl/HxUHbDUukonBaqGH8" />. If you are around, feel free to reach me out, we could have some *chai* or work together.
+Outside of programming, being a mountain guy from <WhiteLink text="Uttarakhand" link="https://maps.app.goo.gl/pWWe9LMDAvabPUVL6" />, I enjoy mountain trekking and exploring valleys. Some of my memories can be found on <WhiteLink text="Pintrest" link="https://www.pinterest.com/GopalVerma1303/" />.  
+
+Right now I live in <WhiteLink text="Chandigarh" link="https://maps.app.goo.gl/HxUHbDUukonBaqGH8" />. If you are around, feel free to reach me out, we could have some *chai* or work together.
 
 <br />
 <br />

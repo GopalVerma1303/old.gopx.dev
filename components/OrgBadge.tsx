@@ -13,7 +13,7 @@ const OrgBadge: React.FC<OrgBadgeProps> = ({ name, link, logo }) => {
     <Link
       href={link}
       target="_blank"
-      className="inline-flex items-center align-middle mx-[2.5px] my-[3px]  gap-[5px] font-roboto rounded-sm px-[4px] py-[0px] font-semibold hover:cursor-pointer dark:bg-white/10 dark:hover:bg-white/15 dark:text-white/60 dark:hover:text-white/70 bg-black/10 hover:bg-black/15 text-black/60 hover:text-black/70"
+      className="inline-flex items-center align-middle mx-[3px] my-[3px]  gap-[5px] font-roboto rounded-sm px-[4px] py-[0px] font-semibold hover:cursor-pointer dark:bg-white/10 dark:hover:bg-white/15 dark:text-white/60 dark:hover:text-white/70 bg-black/10 hover:bg-black/15 text-black/60 hover:text-black/70"
     >
       <Image
         src={logo}
