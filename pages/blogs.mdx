@@ -7,6 +7,7 @@ import Link from 'next/link'
 import { getPagesUnderRoute } from 'nextra/context'
 import { format, parseISO } from 'date-fns'
 import GhostLabel from "@/components/GhostLabel";
+import BlogRow from "@/components/BlogRow";
 
 export function ExtractBlogsByYear() {
   const allBlogs = getPagesUnderRoute('/blogs');
@@ -23,33 +24,6 @@ export function ExtractBlogsByYear() {
   });
 
   return blogsByYear;
-}
-
-export function BlogRow({ page }) {
-  const formattedDate = page.frontMatter?.date
-    ? format(parseISO(page.frontMatter.date), 'MMM dd')
-    : null;
-  return (
-    <Link
-      href={page.route}
-      style={{ color: 'inherit', textDecoration: 'none' }}
-      className="group flex flex-col md:flex-row justify-between items-start md:items-center gap-[4px] md:gap-[12px] w-full opacity-70 hover:opacity-100 transition-opacity duration-200 ease-in-out my-[10px]"
-    >
-      <div className="flex gap-[5px] items-center">
-        <p className="text-xl group-hover:underline">{page.meta?.title || page.frontMatter?.title || page.name}</p>
-        <p className="text-xs transform transition-transform duration-200 ease-in-out group-hover:animate-flicker">{'↗'}</p>
-      </div>
-      <div className="flex gap-[8px] items-center flex-shrink-0">
-        {formattedDate && <p className="opacity-50 text-sm">{formattedDate}</p>}
-        {formattedDate && page.frontMatter?.readTime && (
-          <p className="opacity-50 text-sm">•</p>
-        )}
-        {page.frontMatter?.readTime && (
-          <p className="opacity-50 text-sm">{page.frontMatter.readTime} mins</p>
-        )}
-      </div>
-    </Link>
-  );
 }
 
 export function BlogHeader() {

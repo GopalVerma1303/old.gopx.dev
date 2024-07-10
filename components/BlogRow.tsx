@@ -1,33 +1,18 @@
-import { useLayoutEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
-import React, { SVGProps, useState, useRef } from "react";
+import { format, parseISO } from "date-fns";
+import React, { useState, useRef, useLayoutEffect } from "react";
 
-type WhiteLinkProps = {
-  text: string;
-  Icon?: React.FC<SVGProps<SVGSVGElement>>;
-  link: string;
-  hoverMessage?: string;
-  hoverImage?: {
-    src: string;
-    alt: string;
-    width: number;
-    height: number;
-  };
-};
-
-const WhiteLink: React.FC<WhiteLinkProps> = ({
-  Icon,
-  text,
-  link,
-  hoverMessage,
-  hoverImage,
-}: WhiteLinkProps) => {
+// @ts-ignore
+export default function BlogRow({ page }) {
   const [isHovering, setIsHovering] = useState(false);
   const [position, setPosition] = useState({ x: 0, y: 0 });
   const [isVisible, setIsVisible] = useState(false);
   const linkRef = useRef<HTMLAnchorElement>(null);
   const hoverContentRef = useRef<HTMLDivElement>(null);
+
+  const formattedDate = page.frontMatter?.date
+    ? format(parseISO(page.frontMatter.date), "MMM dd")
+    : null;
 
   useLayoutEffect(() => {
     const handleMouseMove = (e: MouseEvent) => {
@@ -56,43 +41,48 @@ const WhiteLink: React.FC<WhiteLinkProps> = ({
 
   return (
     <Link
-      href={link}
+      href={page.route}
       ref={linkRef}
-      className={`inline-flex justify-center items-center mx-[4px] font-bold ${
-        Icon ? "pb-1" : ""
-      } rounded-none w-fit border-b border-white/30 hover:border-current transition-colors duration-500 relative`}
+      style={{ color: "inherit", textDecoration: "none" }}
+      className="group flex flex-col md:flex-row justify-between items-start md:items-center gap-[4px] md:gap-[12px] w-full opacity-70 hover:opacity-100 transition-opacity duration-200 ease-in-out my-[10px] relative"
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
-      {Icon && <Icon className="mr-1" />}
-      {text}
-      {isHovering && (hoverMessage || hoverImage) && (
+      <div className="flex gap-[5px] items-center">
+        <p className="text-xl group-hover:underline">
+          {page.meta?.title || page.frontMatter?.title || page.name}
+        </p>
+        <p className="text-xs transform transition-transform duration-200 ease-in-out group-hover:animate-flicker">
+          {"↗"}
+        </p>
+      </div>
+      <div className="flex gap-[8px] items-center flex-shrink-0">
+        {formattedDate && <p className="opacity-50 text-sm">{formattedDate}</p>}
+        {formattedDate && page.frontMatter?.readTime && (
+          <p className="opacity-50 text-sm">•</p>
+        )}
+        {page.frontMatter?.readTime && (
+          <p className="opacity-50 text-sm">{page.frontMatter.readTime} mins</p>
+        )}
+      </div>
+      {isHovering && page.frontMatter?.description && (
         <div
           ref={hoverContentRef}
           className={`absolute dark:bg-[#111111] bg-[#FFFFFF] border-[#e6e6e6] border dark:border-[#333333] p-2 rounded shadow-md z-10 transition-opacity duration-300 ease-in-out ${
-            hoverImage ? "p-0" : ""
-          } ${isVisible ? "opacity-100" : "opacity-0"}`}
+            isVisible ? "opacity-100" : "opacity-0"
+          }`}
           style={{
             left: `${position.x}px`,
             top: `${position.y}px`,
-            width: hoverImage ? `${hoverImage.width}px` : "auto",
+            width: "300px",
             transform: "translateX(-50%)",
           }}
         >
-          {hoverMessage && <p>{hoverMessage}</p>}
-          {hoverImage && (
-            <Image
-              src={hoverImage.src}
-              alt={hoverImage.alt}
-              width={hoverImage.width}
-              height={hoverImage.height}
-              className="rounded"
-            />
-          )}
+          <span className="text-sm opacity-50">
+            {page.frontMatter.description}
+          </span>
         </div>
       )}
     </Link>
   );
-};
-
-export default WhiteLink;
+}
