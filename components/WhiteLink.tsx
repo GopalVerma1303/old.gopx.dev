@@ -69,9 +69,9 @@ const WhiteLink: React.FC<WhiteLinkProps> = ({
       {isHovering && (hoverMessage || hoverImage) && (
         <div
           ref={hoverContentRef}
-          className={`absolute dark:bg-[#111111] bg-[#FFFFFF] border-[#e6e6e6] border dark:border-[#333333] p-2 rounded shadow-md z-10 transition-opacity duration-300 ease-in-out ${
-            hoverImage ? "p-0" : ""
-          } ${isVisible ? "opacity-100" : "opacity-0"}`}
+          className={`absolute dark:bg-[#111111] bg-[#FFFFFF] border-[#e6e6e6] border dark:border-[#333333] rounded shadow-md z-10 transition-opacity duration-300 ease-in-out ${
+            isVisible ? "opacity-100" : "opacity-0"
+          }`}
           style={{
             left: `${position.x}px`,
             top: `${position.y}px`,
@@ -79,7 +79,7 @@ const WhiteLink: React.FC<WhiteLinkProps> = ({
             transform: "translateX(-50%)",
           }}
         >
-          {hoverMessage && <p>{hoverMessage}</p>}
+          {hoverMessage && <span>{hoverMessage}</span>}
           {hoverImage && (
             <Image
               src={hoverImage.src}
