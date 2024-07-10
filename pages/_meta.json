@@ -25,16 +25,16 @@
       "typesetting": "article"
     }
   },
-  "about": {
-    "type": "page",
-    "title": "About",
-    "theme": {
-      "typesetting": "article"
-    }
-  },
   "me": {
     "type": "page",
     "title": "Me",
+    "theme": {
+      "typesetting": "default"
+    }
+  },
+  "stats": {
+    "type": "page",
+    "display": "hidden",
     "theme": {
       "typesetting": "default"
     }
