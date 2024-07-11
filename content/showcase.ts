@@ -6,16 +6,26 @@ export type ShowcaseItem = {
   img: string;
 };
 
-const FIRE_WORKS: any[] = [
+const BUILDING: any[] = [
   {
     title: "gopx.dev",
     href: "https://github.com/GopalVerma1303/gopx.dev",
     img: "https://bettercallgopal.vercel.app/og.jpeg",
   },
   {
-    title: "Squadbook",
-    href: "https://github.com/GopalVerma1303/Squadbook",
-    img: "https://opengraph.githubassets.com/1/GopalVerma1303/Squadbook",
+    title: "GOPX WEBUI",
+    href: "https://github.com/GopalVerma1303/gopx-webui-kit",
+    img: "/showcase/webui.png",
+  },
+  {
+    title: "GOPX MOBUI",
+    href: "https://github.com/GopalVerma1303/gopx-mobui-kit",
+    img: "/showcase/mobui.png",
+  },
+  {
+    title: "GrabStreet",
+    href: "https://github.com/GopalVerma1303/GrabStreet",
+    img: "/showcase/gs.png",
   },
 ];
 
@@ -107,6 +117,12 @@ const CONTRIBUTIONS: any[] = [
     img: "https://opengraph.githubassets.com/1/CodeDeployingSquad/Squadbook",
   },
   {
+    title: "SquadCook",
+    href: "https:github.com/CodeDeployingSquad/SquadChat/commits?author%3Agopalverma1303",
+    img: "https://opengraph.githubassets.com/1/CodeDeployingSquad/SquadChat",
+  },
+
+  {
     title: "VogueGenie",
     href: "https://github.com/GopalVerma1303/voguegenie/commits?author=GopalVerma1303",
     img: "https://opengraph.githubassets.com/1/GopalVerma1303/voguegenie",
@@ -126,4 +142,4 @@ const JOBS: any[] = [
   },
 ];
 
-export { CONTRIBUTIONS, WORKS, COLLABORATIONS, FIRE_WORKS, JOBS };
+export { CONTRIBUTIONS, WORKS, COLLABORATIONS, BUILDING, JOBS };

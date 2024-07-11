@@ -11,7 +11,8 @@ import { BsTwitter } from "react-icons/bs";
 import SignLight from "@/public/personal/sign-white.svg"
 import SignDark from "@/public/personal/sign-black.svg"
 import Image from "next/image";
-import {RESUME, WORKING, STUDY, BUILDING, MAINTAINING, CORE_TEAM} from "@/content/me"
+import {TIMELINE, RESUME, WORKING, STUDY, BUILDING, MAINTAINING, CORE_TEAM} from "@/content/me"
+import Timeline from "@/components/Timeline";
 
 <br />
 <br />
@@ -37,8 +38,13 @@ Right now I live in <WhiteLink text="Chandigarh" hoverImage={{src: "/personal/me
 
 <br />
 <br />
-<br />
 
+Timeline  
+<br />
+<Timeline events={TIMELINE} />
+
+<br />
+<br />
 
 Find me on  
 <br />
@@ -56,7 +62,6 @@ Find me on
 
 Mail me at <WhiteLink text="vermagprofessional@gmail.com" link="mailto:vermagprofessional@gmail" Icon={FaEnvelope} /> Or, book a <WhiteLink Icon={FaPhone} text="personalized call" link="https://cal.com/bettercallgopal/personalizedcall" />
 
-<br />
 <br />
 <br />
 

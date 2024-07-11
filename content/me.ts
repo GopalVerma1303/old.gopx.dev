@@ -1,6 +1,6 @@
 export const WORKING: any[] = [
   {
-    name: "GopX.dev",
+    name: "GOPX.DEV",
     link: "https://www.gopx.dev",
     logo: "/icon-512x512.png",
   },
@@ -8,19 +8,19 @@ export const WORKING: any[] = [
 
 export const BUILDING: any[] = [
   {
-    name: "GopX-WebUI-Kit",
+    name: "GOPX WEBUI",
     link: "https://github.com/GopalVerma1303/gopx-webui-kit",
-    logo: "/personal/me/webui-dark.png",
+    logo: "/personal/me/gopx-webui-dark.png",
   },
   {
-    name: "GopX-MobUI-Kit",
+    name: "GOPX MOBUI",
     link: "https://github.com/GopalVerma1303/gopx-mobui-kit",
-    logo: "/personal/me/mobui-dark.png",
+    logo: "/personal/me/gopx-mobui-dark.png",
   },
   {
     name: "GrabStreet",
     link: "https://github.com/GopalVerma1303/GrabStreet",
-    logo: "/personal/me/GrabStreet.png",
+    logo: "/personal/me/gs-dark.png",
   },
 ];
 
@@ -75,3 +75,21 @@ export const STUDY: any[] = [
 
 export const RESUME: String =
   "https://drive.google.com/file/d/1NO-hoN5dveXg65_qOUbC9vk9bIjBVn0r/view?usp=sharing";
+
+export const TIMELINE: any[] = [
+  { year: "2003", description: "Born in India" },
+  {
+    year: "2021",
+    description: "Completed senior high school from DPS (Ranipur)",
+  },
+  {
+    year: "2024",
+    description:
+      "Final year student at PEC (Chandigarh), worked as Software Engineering Intern at BHEL (Haridwar)",
+  },
+  {
+    year: "2022 to present",
+    description:
+      "Pursuing BS in Data Science from IIT (Madras) while working as a freelancer",
+  },
+];

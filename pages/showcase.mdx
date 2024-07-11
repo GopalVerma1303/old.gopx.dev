@@ -4,7 +4,7 @@ description: Project Gallery - A curated showcase of my works, collaborations an
 ---
 
 import { Cards } from 'nextra/components'
-import {WORKS, COLLABORATIONS, FIRE_WORKS, JOBS, CONTRIBUTIONS} from '@/content/showcase'
+import {WORKS, COLLABORATIONS, BUILDING, JOBS, CONTRIBUTIONS} from '@/content/showcase'
 import Image from 'next/image'
 
 export function ShowcaseHeader() {
@@ -22,11 +22,11 @@ export function ShowcaseHeader() {
 
 <ShowcaseHeader />
 
-## 🔥ing
+## Building
 
 <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 border-b border-gray-400 border-opacity-20 mb-16 pb-8">
   {
-    FIRE_WORKS.map((work) => (
+    BUILDING.map((work) => (
     <Cards>
       <ShowcaseCard title={work.title} href={work.href} >
         <Image src={work.img} width={500} height={500} />

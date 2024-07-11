@@ -65,7 +65,7 @@ export default function BlogRow({ page }) {
           <p className="opacity-50 text-sm">{page.frontMatter.readTime} mins</p>
         )}
       </div>
-      {isHovering && page.frontMatter?.description && (
+      {false && page.frontMatter?.description && (
         <div
           ref={hoverContentRef}
           className={`absolute dark:bg-[#111111] bg-[#FFFFFF] border-[#e6e6e6] border dark:border-[#333333] p-2 rounded shadow-md z-10 transition-opacity duration-300 ease-in-out ${
