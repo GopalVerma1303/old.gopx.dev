@@ -26,7 +26,7 @@ export const BUILDING: any[] = [
 
 export const MAINTAINING: any[] = [
   {
-    name: "www-cds",
+    name: "CDS WWW",
     link: "https://github.com/CodeDeployingSquad/WWW",
     logo: "https://www.codedeployingsquad.tech/assets/website/cdsglobe.png",
   },

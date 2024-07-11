@@ -117,7 +117,7 @@ const CONTRIBUTIONS: any[] = [
     img: "https://opengraph.githubassets.com/1/CodeDeployingSquad/Squadbook",
   },
   {
-    title: "SquadCook",
+    title: "SquadChat",
     href: "https:github.com/CodeDeployingSquad/SquadChat/commits?author%3Agopalverma1303",
     img: "https://opengraph.githubassets.com/1/CodeDeployingSquad/SquadChat",
   },
