@@ -60,7 +60,7 @@ const WhiteLink: React.FC<WhiteLinkProps> = ({
       ref={linkRef}
       className={`inline-flex justify-center items-center mx-[4px] font-bold ${
         Icon ? "pb-1" : ""
-      } rounded-none w-fit border-b border-white/30 hover:border-current transition-colors duration-500 relative`}
+      } rounded-none w-fit border-b border-black/20 dark:border-white/20 dark:hover:border-white/70 hover:border-black/70 transition-colors duration-500 relative`}
       onMouseEnter={() => setIsHovering(true)}
       onMouseLeave={() => setIsHovering(false)}
     >
