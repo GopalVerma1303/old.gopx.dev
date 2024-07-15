@@ -43,37 +43,90 @@ const config: DocsThemeConfig = {
         ? `${SOCIAL_MEDIA_LINKS.website.link}/og.jpeg`
         : `${SOCIAL_MEDIA_LINKS.website.link}/api/og?title=${title}&description=${frontMatter.description}`;
 
+    const description =
+      frontMatter.description ||
+      "Gopal Verma's devsite for sharing code, blogs and projects!";
+    const siteName = "gopx.dev";
+    const siteUrl = "https://www.gopx.dev";
+
     return (
       <>
-        <meta name="msapplication-TileColor" content="#fff" />
-        <meta name="theme-color" content="#fff" />
+        <meta name="msapplication-TileColor" content="#000000" />
+        <meta name="theme-color" content="#000000" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Language" content="en" />
+        <meta name="description" content={description} />
+        <meta name="author" content="Gopal Verma" />
+        <meta name="robots" content="index, follow" />
+
+        {/* Open Graph / Facebook */}
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content={`${siteUrl}${route}`} />
         <meta
-          name="description"
-          content="Gopal Verma's devsite for sharing code, blogs and projects!"
+          property="og:title"
+          content={title ? `${title} – ${siteName}` : siteName}
         />
-        <meta
-          name="og:description"
-          content={frontMatter.description ? frontMatter.description : " "}
-        />
+        <meta property="og:description" content={description} />
+        <meta property="og:image" content={socialCard} />
+        <meta property="og:image:width" content="1200" />
+        <meta property="og:image:height" content="630" />
+        <meta property="og:site_name" content={siteName} />
+        <meta property="og:locale" content="en_US" />
+
+        {/* Twitter */}
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:image" content={socialCard} />
-        <meta name="twitter:site:domain" content="gopx.dev" />
-        <meta name="twitter:url" content="https://gopx.dev" />
-        <meta
-          name="twitter:description"
-          content={frontMatter.description ? frontMatter.description : " "}
-        />
+        <meta name="twitter:site" content="@bettercallgopal" />
+        <meta name="twitter:creator" content="@bettercallgopal" />
+        <meta name="twitter:url" content={`${siteUrl}${route}`} />
         <meta
           name="twitter:title"
-          content={title ? title + " – gopx.dev" : "gopx.dev"}
+          content={title ? `${title} – ${siteName}` : siteName}
         />
+        <meta name="twitter:description" content={description} />
+        <meta name="twitter:image" content={socialCard} />
+
+        {/* Pinterest */}
+        <meta name="pinterest-rich-pin" content="true" />
+        <meta name="pinterest:description" content={description} />
+        <meta name="pinterest:image" content={socialCard} />
+
+        {/* LinkedIn */}
+        <meta property="linkedin:card" content="summary_large_image" />
         <meta
-          name="og:title"
-          content={title ? title + " – gopx.dev" : "gopx.dev"}
+          property="linkedin:title"
+          content={title ? `${title} – ${siteName}` : siteName}
         />
+        <meta property="linkedin:description" content={description} />
+        <meta property="linkedin:image" content={socialCard} />
+
+        {/* WhatsApp */}
+        <meta property="og:site_name" content={siteName} />
+        <meta
+          property="og:title"
+          content={title ? `${title} – ${siteName}` : siteName}
+        />
+        <meta property="og:description" content={description} />
         <meta property="og:image" content={socialCard} />
+
+        {/* Instagram (Note: Instagram uses Open Graph tags) */}
+        {/* Already covered by Open Graph tags */}
+
+        {/* Snapchat */}
+        <meta property="snapchat:sticker" content={socialCard} />
+        <meta property="snapchat:app_id" content="YOUR_SNAPCHAT_APP_ID" />
+
+        {/* TikTok */}
+        <meta property="tiktok:app_id" content="YOUR_TIKTOK_APP_ID" />
+        <meta
+          property="tiktok:title"
+          content={title ? `${title} – ${siteName}` : siteName}
+        />
+        <meta property="tiktok:description" content={description} />
+        <meta property="tiktok:image" content={socialCard} />
+
+        {/* Canonical URL */}
+        <link rel="canonical" href={`${siteUrl}${route}`} />
+
         <meta name="apple-mobile-web-app-title" content="gopx.dev" />
         <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" type="image/png" />
@@ -89,6 +142,19 @@ const config: DocsThemeConfig = {
           type="image/png"
           media="(prefers-color-scheme: dark)"
         />
+        <script type="application/ld+json">
+          {JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: siteName,
+            url: siteUrl,
+            author: {
+              "@type": "Person",
+              name: "Gopal Verma",
+            },
+            description: description,
+          })}
+        </script>
       </>
     );
   },
