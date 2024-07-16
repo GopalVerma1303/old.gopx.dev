@@ -14,17 +14,20 @@ const BUILDING: any[] = [
   },
   {
     title: "GOPX WEBUI",
-    href: "https://github.com/GopalVerma1303/gopx-webui-kit",
+    // href: "https://github.com/GopalVerma1303/gopx-webui-kit",
+    href: "#",
     img: "/showcase/webui.png",
   },
   {
     title: "GOPX MOBUI",
-    href: "https://github.com/GopalVerma1303/gopx-mobui-kit",
+    // href: "https://github.com/GopalVerma1303/gopx-mobui-kit",
+    href: "#",
     img: "/showcase/mobui.png",
   },
   {
     title: "GrabStreet",
-    href: "https://github.com/GopalVerma1303/GrabStreet",
+    // href: "https://github.com/GopalVerma1303/GrabStreet",
+    href: "#",
     img: "/showcase/gs.png",
   },
 ];

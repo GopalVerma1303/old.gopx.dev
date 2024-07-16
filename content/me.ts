@@ -9,17 +9,22 @@ export const WORKING: any[] = [
 export const BUILDING: any[] = [
   {
     name: "GOPX WEBUI",
-    link: "https://github.com/GopalVerma1303/gopx-webui-kit",
+    // link: "https://github.com/GopalVerma1303/gopx-webui-kit",
+    link: "#",
     logo: "/personal/me/gopx-webui-dark.png",
   },
   {
     name: "GOPX MOBUI",
-    link: "https://github.com/GopalVerma1303/gopx-mobui-kit",
+    // link: "https://github.com/GopalVerma1303/gopx-mobui-kit",
+    link: "#",
+
     logo: "/personal/me/gopx-mobui-dark.png",
   },
   {
     name: "GrabStreet",
-    link: "https://github.com/GopalVerma1303/GrabStreet",
+    // link: "https://github.com/GopalVerma1303/GrabStreet",
+    link: "#",
+
     logo: "/personal/me/gs-dark.png",
   },
 ];
