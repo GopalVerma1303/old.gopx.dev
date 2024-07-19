@@ -14,35 +14,61 @@ const BUILDING: any[] = [
   },
   {
     title: "GOPX WEBUI",
-    // href: "https://github.com/GopalVerma1303/gopx-webui-kit",
-    href: "#",
+    href: "https://github.com/GopalVerma1303/gopx-webui-kit",
     img: "/showcase/webui.png",
   },
   {
     title: "GOPX MOBUI",
-    // href: "https://github.com/GopalVerma1303/gopx-mobui-kit",
-    href: "#",
+    href: "https://github.com/GopalVerma1303/gopx-mobui-kit",
     img: "/showcase/mobui.png",
   },
-  {
-    title: "GrabStreet",
-    // href: "https://github.com/GopalVerma1303/GrabStreet",
-    href: "#",
-    img: "/showcase/gs.png",
-  },
+  // {
+  //   title: "GrabStreet",
+  //   href: "https://github.com/GopalVerma1303/GrabStreet",
+  //   img: "/showcase/gs.png",
+  // },
 ];
 
-const WORKS: any[] = [
+const CONFIGS: any[] = [
   {
     title: "My Dotfiles",
     href: "https://github.com/GopalVerma1303/dotfiles",
     img: "/showcase/dotfiles.png",
   },
   {
-    title: "CDS Website",
-    href: "https://github.com/CodeDeployingSquad/WWW",
-    img: "/showcase/cds.png",
+    title: "MyScripts",
+    href: "https://github.com/GopalVerma1303/myscripts",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/myscripts",
   },
+];
+
+const BACKYARD: any[] = [
+  {
+    title: "HardMon",
+    href: "https://github.com/GopalVerma1303/HardMon",
+    img: "/showcase/hardmon.png",
+  },
+  {
+    title: "AutoForge",
+    href: "https://github.com/GopalVerma1303/AutoForge",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/AutoForge",
+  },
+  {
+    title: "PixieDesk",
+    href: "https://github.com/GopalVerma1303/PixieDesk",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/PixieDesk",
+  },
+  {
+    title: "Log Analyser",
+    href: "https://github.com/GopalVerma1303/LogAnalyser",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/LogAnalyser",
+  },
+  {
+    title: "System Design Smithy",
+    href: "https://github.com/GopalVerma1303/SystemDesignSmithy",
+    img: "https://opengraph.githubassets.com/1/GopalVerma1303/SystemDesignSmithy",
+  },
+
   {
     title: "Old Devsite",
     href: "https://github.com/GopalVerma1303/portfolio",
@@ -110,9 +136,9 @@ const CONTRIBUTIONS: any[] = [
     img: "https://opengraph.githubassets.com/1/RocketChat/Rocket.Chat.ReactNative",
   },
   {
-    title: "Would-You-Bot/website",
-    href: "https://github.com/Would-You-Bot/website/pulls?q=is%3Apr+author%3Agopalverma1303",
-    img: "https://opengraph.githubassets.com/1/Would-You-Bot/website",
+    title: "CDS Website",
+    href: "https://github.com/CodeDeployingSquad/WWW",
+    img: "/showcase/cds.png",
   },
   {
     title: "Squadbook",
@@ -145,4 +171,4 @@ const JOBS: any[] = [
   },
 ];
 
-export { CONTRIBUTIONS, WORKS, COLLABORATIONS, BUILDING, JOBS };
+export { CONTRIBUTIONS, BACKYARD, COLLABORATIONS, BUILDING, JOBS, CONFIGS };
