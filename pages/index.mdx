@@ -19,11 +19,13 @@ import {CTA} from "@/components/CTA";
 import {RESUME} from "@/content/me";
 
 <div className="home-content">
-  <div className="flex justify-center items-center flex-col">
+  <div className="relative flex justify-center items-center flex-col">
+  <div className="absolute inset-0 bg-[linear-gradient(to_bottom,rgba(0,0,0,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(0,0,0,0.1)_1px,transparent_1px)] dark:bg-[linear-gradient(to_bottom,rgba(255,255,255,0.1)_1px,transparent_1px),linear-gradient(to_right,rgba(255,255,255,0.1)_1px,transparent_1px)] bg-[size:4rem_4rem] [mask-image:linear-gradient(to_bottom,white,transparent)]"></div>
     <Link href="https://x.com/bettercallgopal" className="sm:mt-[50px] mt-[30px]">
       <span className="inline-flex items-center rounded-full bg-gray-500/10 dark:bg-gray-700 px-5 py-2 text-xs font-medium ring-1 ring-inset dark:ring-gray-400/30 ring-gray-500/50 font-anton dark:text-white gap-x-1 text-gray-500 "><RiTwitterXLine />@bettercallgopal</span>
     </Link>
     <h1 className="headline font-anton text-center mb-[50px]">BUILDING SOMETHING <br /> PEOPLE WANT</h1>
+    <h2 className=" -mt-[20px] mb-[40px] text-center px-4 max-w-xs sm:max-w-lg mx-auto text-sm sm:text-base md:text-lg lg:text-xl opacity-[60%] font-roboto">My devsite for sharing **code snippets**, **notes**, **resources**, **blogs** and showcase **projects**!</h2>
     <CTA />
   </div>
   <style jsx>{`
@@ -48,8 +50,7 @@ import {RESUME} from "@/content/me";
     }
     .headline {
       display: inline-flex;
-      font-size: 3.125rem;
-      font-size: min(4.375rem, max(8vw, 2.5rem));
+      font-size: min(5.375rem, max(8vw, 2.5rem));
       font-weight: 700;
       font-feature-settings: initial;
       letter-spacing: 0rem;

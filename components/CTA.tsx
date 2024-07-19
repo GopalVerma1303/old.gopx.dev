@@ -55,7 +55,7 @@ export const CTA = () => {
       whileTap={{
         scale: 0.985,
       }}
-      className="group relative flex w-fit items-center gap-1.5 rounded-full dark:bg-gray-950/10 px-4 py-2 transition-colors dark:hover:bg-gray-950/50"
+      className="group relative flex w-fit items-center gap-1.5 rounded-full dark:bg-gray-950/10 px-4 py-2 transition-colors dark:hover:bg-gray-950/50 text-xs sm:text-sm md:text-md"
     >
       Book a call
       <FiPhoneCall className="transition-transform group-hover:-rotate-45 group-active:-rotate-12" />
