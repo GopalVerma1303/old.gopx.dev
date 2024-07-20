@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>http://localhost:3000</id>
     <title>Gopal Verma | gopx.dev</title>
-    <updated>2024-07-19T07:46:38.967Z</updated>
+    <updated>2024-07-20T08:09:56.332Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="http://localhost:3000"/>
     <link rel="self" href="http://localhost:3000/atom.xml"/>
@@ -37,6 +37,13 @@
         <link href="http://localhost:3000/blogs/90pc-useless"/>
         <updated>2023-12-16T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[90% of Programmers Are Pretty Damn Bad Programmers]]></summary>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Windows Crash of July 19, 2024]]></title>
+        <id>http://localhost:3000/blogs/window-crash-190724</id>
+        <link href="http://localhost:3000/blogs/window-crash-190724"/>
+        <updated>2024-07-20T00:00:00.000Z</updated>
+        <summary type="html"><![CDATA[How did a cybersecurity update triggered a global disaster, exposing the hidden dangers of software vulnerabilities.]]></summary>
     </entry>
     <entry>
         <title type="html"><![CDATA[Minimalistic vs Noob Programmers]]></title>

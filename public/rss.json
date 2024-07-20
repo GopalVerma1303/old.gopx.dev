@@ -31,6 +31,12 @@
             "date_modified": "2023-12-16T00:00:00.000Z"
         },
         {
+            "url": "http://localhost:3000/blogs/window-crash-190724",
+            "title": "Windows Crash of July 19, 2024",
+            "summary": "How did a cybersecurity update triggered a global disaster, exposing the hidden dangers of software vulnerabilities.",
+            "date_modified": "2024-07-20T00:00:00.000Z"
+        },
+        {
             "url": "http://localhost:3000/blogs/fake-minimalism",
             "title": "Minimalistic vs Noob Programmers",
             "summary": "Learn how to distinguish between a true minimalistic programmer and one who is just faking it.",

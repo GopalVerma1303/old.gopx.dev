@@ -97,7 +97,7 @@ export default async function (req) {
             width: "900px",
             fontSize: 34,
             margin: "0 0 40px -2px",
-            lineHeight: 1.1,
+            lineHeight: 1.3,
             textShadow: "0 2px 30px #000",
             letterSpacing: -1,
             backgroundImage: "linear-gradient(90deg, #fff 40%, #aaa)",
