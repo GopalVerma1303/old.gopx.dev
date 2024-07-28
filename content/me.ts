@@ -9,8 +9,7 @@ export const WORKING: any[] = [
 export const BUILDING: any[] = [
   {
     name: "GOPX WEBUI",
-    link: "https://github.com/GopalVerma1303/gopx-webui-kit",
-    // link: "#",
+    link: "https://webui.gopx.dev",
     logo: "/personal/me/gopx-webui-dark.png",
   },
   {

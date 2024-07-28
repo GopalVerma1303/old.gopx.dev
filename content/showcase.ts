@@ -14,8 +14,8 @@ const BUILDING: any[] = [
   },
   {
     title: "GOPX WEBUI",
-    href: "https://github.com/GopalVerma1303/gopx-webui-kit",
-    img: "/showcase/webui.png",
+    href: "https://webui.gopx.dev",
+    img: "https://webui-gopx.vercel.app/og.jpeg",
   },
   {
     title: "GOPX MOBUI",
