@@ -219,7 +219,11 @@ const config: DocsThemeConfig = {
     placeholder: "Search for something...",
   },
   navbar: {
-    extraContent: [<SiteMapIcon />, <RssIcon />],
+    extraContent: [
+      <div className="flex justify-center items-center">
+        <SiteMapIcon /> <RssIcon />{" "}
+      </div>,
+    ],
   },
   toc: {
     backToTop: true,

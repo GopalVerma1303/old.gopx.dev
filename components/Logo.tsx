@@ -8,8 +8,10 @@ type LogoProps = {
 const Logo: React.FC<LogoProps> = ({ name, initials }: LogoProps) => {
   return (
     <div className="opacity-85">
-      <p className="text-3xl hidden sm:inline font-bold font-anton">{name}</p>
-      <p className="sm:hidden text-3xl uppercase font-bold font-anton">
+      <p className="text-3xl hidden lg:inline uppercase font-bold font-anton">
+        {name}
+      </p>
+      <p className="lg:hidden text-3xl uppercase font-bold font-anton">
         {initials}
       </p>
     </div>

@@ -4,7 +4,7 @@ description: Who is Gopal Verma?
 ---
 
 import OrgBadge from "@/components/OrgBadge";
-import WhiteLink from "@/components/WhiteLink";
+import ImageTooltip from "@/components/ImageTooltip";
 import { RiTwitterXLine } from "react-icons/ri";
 import { FaFacebook, FaInstagram, FaYoutube, FaReddit, FaLinkedin, FaQuora, FaPinterest, FaDiscord, FaEnvelope, FaPhone } from "react-icons/fa";
 import { BsTwitter } from "react-icons/bs";
@@ -17,7 +17,7 @@ import Timeline from "@/components/Timeline";
 <br />
 <br />
 # Gopal Verma
-Hey, I'm <span><WhiteLink hoverImage={{src: "/personal/me/twitter.png", alt: "my og", width: 200, height: 200}} text="Gopal Verma" link="https://x.com/bettercallgopal" /></span>, an indie developer, open sourceror and full-stack developer.
+Hey, I'm <span><ImageTooltip hoverImage={{src: "/personal/me/twitter.png", alt: "my og", width: 200, height: 200}} text="Gopal Verma" link="https://x.com/bettercallgopal" /></span>, an indie developer, open sourceror and full-stack developer.
 
 Working at {WORKING.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w.link} logo={w.logo} />))}  
 Building {BUILDING.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w.link} logo={w.logo} />))}  
@@ -25,16 +25,16 @@ Maintaining {MAINTAINING.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w
 Core team of {CORE_TEAM.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w.link} logo={w.logo} />))}  
 Studied at {STUDY.map((w, i) => ( <OrgBadge key={i} name={w.name} link={w.link} logo={w.logo} />))}  
 
-Find my <WhiteLink text="Stats-&-Streaks" link="/stats" />. Find my <WhiteLink text="resume" link={RESUME} />.
+Find my <ImageTooltip text="Stats-&-Streaks" link="/stats" />. Find my <ImageTooltip text="resume" link={RESUME} />.
 
-"*Building something people want*" is where my passion lies. You can find all my projects, contributions and collaborations here on my <WhiteLink text="showcase" link="/showcase" />.
+"*Building something people want*" is where my passion lies. You can find all my projects, contributions and collaborations here on my <ImageTooltip text="showcase" link="/showcase" />.
 
-I write <WhiteLink text="blog posts" link="/blogs" /> about programming, tech, life etc. Occasionally, I make videos for <WhiteLink text="YouTube" link="https://www.youtube.com/channel/UCgfABFAZox1a26_iyyUuYeg" />.  
-You can discover my code snippets, notes, mindmaps, resources and detailed analyses in my interactive <WhiteLink text="notebooks." link="/notebooks" />
+I write <ImageTooltip text="blog posts" link="/blogs" /> about programming, tech, life etc. Occasionally, I make videos for <ImageTooltip text="YouTube" link="https://www.youtube.com/channel/UCgfABFAZox1a26_iyyUuYeg" />.  
+You can discover my code snippets, notes, mindmaps, resources and detailed analyses in my interactive <ImageTooltip text="notebooks." link="/notebooks" />
 
-Outside of programming, being a mountain guy from <WhiteLink hoverImage={{src: "/personal/me/utkd.jpg", alt: "my og", width: 200, height: 100}} text="Uttarakhand" link="https://maps.app.goo.gl/pWWe9LMDAvabPUVL6" />, I enjoy mountain trekking and exploring valleys. Some of my memories can be found on <WhiteLink text="Pintrest" link="https://www.pinterest.com/GopalVerma1303/" />.  
+Outside of programming, being a mountain guy from <ImageTooltip hoverImage={{src: "/personal/me/utkd.jpg", alt: "my og", width: 200, height: 100}} text="Uttarakhand" link="https://maps.app.goo.gl/pWWe9LMDAvabPUVL6" />, I enjoy mountain trekking and exploring valleys. Some of my memories can be found on <ImageTooltip text="Pintrest" link="https://www.pinterest.com/GopalVerma1303/" />.  
 
-Right now I live in <WhiteLink text="Chandigarh" hoverImage={{src: "/personal/me/chd.jpg", alt: "my og", width: 200, height: 100}} link="https://maps.app.goo.gl/HxUHbDUukonBaqGH8" />. If you are around, feel free to reach me out, we could have some *chai* or work together.
+Right now I live in <ImageTooltip text="Chandigarh" hoverImage={{src: "/personal/me/chd.jpg", alt: "my og", width: 200, height: 100}} link="https://maps.app.goo.gl/HxUHbDUukonBaqGH8" />. If you are around, feel free to reach me out, we could have some *chai* or work together.
 
 <br />
 <br />
@@ -51,18 +51,18 @@ Timeline
 Find me on  
 <br />
 <div className="flex gap-2 flex-wrap">
-<WhiteLink text="Twitter" link="https://twitter.com/bettercallgopal" Icon={RiTwitterXLine} />  
-<WhiteLink text="Facebook" link="https://www.facebook.com/profile.php?id=100067485754453" Icon={FaFacebook} />  
-<WhiteLink text="Instagram" link="https://www.instagram.com/bettercallgopal" Icon={FaInstagram} />  
-<WhiteLink text="Reddit" link="https://www.reddit.com/user/Gopal__Verma/" Icon={FaReddit} />  
-<WhiteLink text="LinkedIn" link="https://www.linkedin.com/in/vermagopal" Icon={FaLinkedin} />  
-<WhiteLink text="Quora" link="https://www.quora.com/profile/Gopal-Verma-301" Icon={FaQuora} />  
-<WhiteLink text="YouTube" link="https://www.youtube.com/channel/UCgfABFAZox1a26_iyyUuYeg" Icon={FaYoutube} />  
-<WhiteLink text="Pinterest" link="https://in.pinterest.com/GopalVerma1303/_saved/" Icon={FaPinterest} />  
-<WhiteLink text="Discord" link="https://discord.com/invite/uR7DpxtaKw" Icon={FaDiscord} />  
+<ImageTooltip text="Twitter" link="https://twitter.com/bettercallgopal" Icon={RiTwitterXLine} />  
+<ImageTooltip text="Facebook" link="https://www.facebook.com/profile.php?id=100067485754453" Icon={FaFacebook} />  
+<ImageTooltip text="Instagram" link="https://www.instagram.com/bettercallgopal" Icon={FaInstagram} />  
+<ImageTooltip text="Reddit" link="https://www.reddit.com/user/Gopal__Verma/" Icon={FaReddit} />  
+<ImageTooltip text="LinkedIn" link="https://www.linkedin.com/in/vermagopal" Icon={FaLinkedin} />  
+<ImageTooltip text="Quora" link="https://www.quora.com/profile/Gopal-Verma-301" Icon={FaQuora} />  
+<ImageTooltip text="YouTube" link="https://www.youtube.com/channel/UCgfABFAZox1a26_iyyUuYeg" Icon={FaYoutube} />  
+<ImageTooltip text="Pinterest" link="https://in.pinterest.com/GopalVerma1303/_saved/" Icon={FaPinterest} />  
+<ImageTooltip text="Discord" link="https://discord.com/invite/uR7DpxtaKw" Icon={FaDiscord} />  
 </div>
 
-Mail me at <WhiteLink text="business.gopalverma@gmail.com" link="mailto:business.gopalverma@gmail.com" Icon={FaEnvelope} /> Or, book a <WhiteLink Icon={FaPhone} text="personalized call" link="https://cal.com/bettercallgopal/personalizedcall" />
+Mail me at <ImageTooltip text="business.gopalverma@gmail.com" link="mailto:business.gopalverma@gmail.com" Icon={FaEnvelope} /> Or, book a <ImageTooltip Icon={FaPhone} text="personalized call" link="https://cal.com/bettercallgopal/personalizedcall" />
 
 <br />
 <br />

@@ -4,7 +4,7 @@ export function SiteMapIcon() {
   return (
     <>
       <a
-        style={{ padding: "0.5rem" }}
+        style={{ paddingRight: "0.5rem" }}
         href="/sitemap-0.xml"
         aria-label="sitemap"
         rel="nofollow noreferrer"
