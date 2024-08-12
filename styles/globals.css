@@ -5,10 +5,49 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --light-custom-bg: #ffffff;
+  --dark-custom-bg: #000000;
+}
+
 body {
+  background-color: var(--light-custom-bg);
+  background-size: 20px 20px;
+  background-position:
+    0 0,
+    10px 10px;
+  background-attachment: fixed;
   font-feature-settings:
     "rlig" 1,
     "calt" 1;
+}
+
+.dark body {
+  background-color: var(--dark-custom-bg) !important;
+}
+
+/* Aggressive override for Nextra navbar */
+.nextra-nav-container,
+.nextra-nav-container nav,
+.nextra-nav-container-blur,
+header.nx-bg-white,
+header.nx-bg-dark,
+.dark .nextra-nav-container,
+.dark .nextra-nav-container nav,
+.dark .nextra-nav-container-blur,
+.dark header.nx-bg-white,
+.dark header.nx-bg-dark {
+  background-color: #000000 !important;
+  background: #000000 !important;
+}
+
+/* Ensure text and icons are visible on black background */
+.nextra-nav-container *,
+.nextra-nav-container nav *,
+.nextra-nav-container-blur *,
+header.nx-bg-white *,
+header.nx-bg-dark * {
+  color: #ffffff !important;
 }
 
 .home-content p {
