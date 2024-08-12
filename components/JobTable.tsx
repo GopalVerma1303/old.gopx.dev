@@ -36,10 +36,10 @@ const JobTable: React.FC<JobTableProps> = ({ job, themeColor }) => {
       {rows.map((row, index) => (
         <div
           key={index}
-          className="flex justify-between items-start flex-wrap gap-2 pb-2 border-gray-300 dark:border-gray-700 border-b-[0.5px]"
+          className="flex justify-between items-start flex-wrap gap-2 pb-2 border-black/20 dark:border-white/20 border-b-[0.5px]"
         >
           <Badge label={row.label} color={themeColor} />
-          <span className="text-sm lg:w-[600px] md:w-[550px] w-[230px] italic dark:text-gray-300 text-gray-600 text-justify">
+          <span className="text-sm lg:w-[600px] md:w-[550px] w-[230px] font-roboto  text-justify">
             {row.label === "WEBSITE" ? (
               <Link
                 href={job.website}
