@@ -16,7 +16,7 @@ import Logo from "@/components/Logo";
 
 const logo = (
   <>
-    <Logo name="gopx.dev" initials="GV" />
+    <Logo name="www.gopx.dev" initials="GV" />
   </>
 );
 
