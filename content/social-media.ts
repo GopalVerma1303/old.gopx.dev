@@ -15,8 +15,8 @@ const SOCIAL_MEDIA_LINKS: Record<string, SocialProfile> = {
     link: "https://github.com/GopalVerma1303/gopx.dev",
   },
   github_docsRepositoryBase: {
-    username: "gopx.dev",
-    link: "https://github.com/GopalVerma1303/gopx.dev/tree/main",
+    username: "gopal__verma",
+    link: "https://discord.com/users/777003660244418570",
   },
   discord: {
     username: "codedeployingsquad",

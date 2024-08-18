@@ -15,6 +15,7 @@ const nextConfig = {
   images: {
     domains: [
       "bettercallgopal.vercel.app",
+      "webui.gopx.dev",
       "webui-gopx.vercel.app",
       "gopx.dev",
       "www.gopx.dev",

@@ -1,5 +1,3 @@
-import { title } from "process";
-
 export type ShowcaseItem = {
   title: string;
   href: string;
@@ -39,6 +37,14 @@ const CONFIGS: any[] = [
     title: "MyScripts",
     href: "https://github.com/GopalVerma1303/myscripts",
     img: "https://opengraph.githubassets.com/1/GopalVerma1303/myscripts",
+  },
+];
+
+const PACKAGES: any[] = [
+  {
+    title: "gopx-webui CLI",
+    href: "https://www.npmjs.com/package/gopx-webui",
+    img: "/showcase/npm.png",
   },
 ];
 
@@ -171,4 +177,12 @@ const JOBS: any[] = [
   },
 ];
 
-export { CONTRIBUTIONS, BACKYARD, COLLABORATIONS, BUILDING, JOBS, CONFIGS };
+export {
+  CONTRIBUTIONS,
+  BACKYARD,
+  COLLABORATIONS,
+  BUILDING,
+  JOBS,
+  CONFIGS,
+  PACKAGES,
+};

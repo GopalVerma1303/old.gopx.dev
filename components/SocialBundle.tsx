@@ -112,7 +112,7 @@ const SocialBundle: React.FC = () => {
         </Link>
       </div>
       <div className="flex justify-center">
-        <Link href="https://discord.com/invite/uR7DpxtaKw">
+        <Link href="https://discord.com/users/777003660244418570">
           <div className={styles.optimization}>
             <div
               className="flex items-center gap-[3px]"
