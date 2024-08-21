@@ -76,7 +76,7 @@ export const STUDY: any[] = [
 ];
 
 export const RESUME: String =
-  "https://drive.google.com/file/d/1JqzZ4qTRPYwfMhPdc1ltKsQ4M_Q4Wd1g/view?usp=sharing";
+  "https://drive.google.com/file/d/1nDiJRSLt-4vzl0Ua-0IWoO0sr_ALGXHb/view?usp=sharing";
 
 export const TIMELINE: any[] = [
   { year: "2003", description: "Born in India" },
