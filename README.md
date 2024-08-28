@@ -1,8 +1,3 @@
-<p align="center">
-  <a href="https://gopx.dev">
-    <img alt="bcg_logo" title="bcg_logo" src="https://bettercallgopal.vercel.app/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Ffull-white-bg-trans.ffdbd8f1.png&w=640&q=75" width="200">
-  </a>
-</p> 
 <h1 align="center"> www.gopx.dev </h1> 
 <h4 align="center">Personal dev website to share code, blogs, and showcase projects.</h4>
 
