@@ -17,14 +17,14 @@ import Link from "next/link";
 
 const logo = (
   <>
-    <Logo name="www.gopx.dev" initials="GV" />
+    <Logo name="GV" initials="GV" />
   </>
 );
 
 const config: DocsThemeConfig = {
   project: {
-    link: SOCIAL_MEDIA_LINKS.github.link,
-    icon: <GitHubIcon />,
+    // link: SOCIAL_MEDIA_LINKS.github.link,
+    // icon: <GitHubIcon />,
   },
   docsRepositoryBase: SOCIAL_MEDIA_LINKS.github_docsRepositoryBase.link,
   useNextSeoProps() {
@@ -195,11 +195,11 @@ const config: DocsThemeConfig = {
     placeholder: "Search for something...",
   },
   navbar: {
-    extraContent: [
-      <div className="flex justify-center items-center">
-        <SiteMapIcon /> <RssIcon />{" "}
-      </div>,
-    ],
+    // extraContent: [
+    //   <div className="flex justify-center items-center">
+    //     <SiteMapIcon /> <RssIcon />{" "}
+    //   </div>,
+    // ],
   },
   toc: {
     backToTop: true,

@@ -1,0 +1,63 @@
+:root {
+  --nextra-primary-hue: 0;
+  --nextra-primary-saturation: 0%;
+}
+
+/* Light theme styles */
+:root {
+  --theme-color: #000000;
+}
+
+/* Dark theme styles */
+.dark {
+  --theme-color: #ffffff;
+}
+
+/* Override Nextra's default colors with the theme color */
+.nx-text-primary-600 {
+  color: var(--theme-color) !important;
+}
+.nx-border-primary-500 {
+  border-color: var(--theme-color) !important;
+}
+.nx-bg-primary-500 {
+  background-color: var(--theme-color) !important;
+}
+
+/* Remove hover text decoration */
+.nx-text-primary-600:hover,
+.nx-bg-primary-500:hover {
+  text-decoration: none;
+}
+
+/* Styles for the selected item in the sidebar */
+.nx-text-primary-600,
+.nx-text-primary-700,
+.nx-text-primary-800,
+.nx-text-primary-900,
+li.nx-active > a,
+li.nx-active > a:hover {
+  color: var(--theme-color) !important;
+}
+
+/* Style for the small colored line next to the selected item */
+li.nx-active > a::before {
+  background-color: var(--theme-color) !important;
+}
+
+/* Background color for the active item */
+li.nx-active {
+  background-color: color-mix(
+    in srgb,
+    var(--theme-color) 10%,
+    transparent
+  ) !important;
+}
+
+/* Optional: Adjust text colors for better contrast in dark mode */
+.dark .nx-text-gray-600,
+.dark .nx-text-gray-700,
+.dark .nx-text-gray-800,
+.dark .nx-text-gray-900 {
+  color: #e0e0e0 !important;
+}
