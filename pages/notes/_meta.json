@@ -1,0 +1,12 @@
+{
+  "index": "Introduction",
+  "-- Notebooks": {
+    "type": "separator",
+    "title": "Notebooks"
+  },
+  "web": "Web Development",
+  "mobile": "Mobile Development",
+  "ai": "Artificial Intelligence",
+  "web3": "Blockchain Development",
+  "misc": "Miscellaneous"
+}

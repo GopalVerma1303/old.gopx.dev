@@ -1,15 +1,15 @@
 {
   "index": {
     "type": "page",
-    "title": "Gopal Verma",
+    "title": "GOPX",
     "display": "hidden",
     "theme": {
       "layout": "raw"
     }
   },
-  "notebooks": {
+  "notes": {
     "type": "page",
-    "title": "Notebooks"
+    "title": "Notes"
   },
   "blogs": {
     "type": "page",
@@ -18,18 +18,25 @@
       "typesetting": "article"
     }
   },
-  "showcase": {
+  "projects": {
     "type": "page",
-    "title": "Showcase",
+    "title": "Projects",
     "theme": {
       "typesetting": "article"
     }
   },
-  "me": {
+  "gallery": {
     "type": "page",
-    "title": "Me",
+    "title": "Gallery",
     "theme": {
-      "typesetting": "default"
+      "typesetting": "article"
+    }
+  },
+  "uses": {
+    "type": "page",
+    "title": "Uses",
+    "theme": {
+      "typesetting": "article"
     }
   },
   "stats": {

@@ -1,17 +1,8 @@
 import { useRouter } from "next/router";
 import type { DocsThemeConfig } from "nextra-theme-docs";
 import { useConfig } from "nextra-theme-docs";
-import Image from "next/image";
-import {
-  GitHubIcon,
-  TwitterXIcon,
-  DiscordIcon,
-  RssIcon,
-  SiteMapIcon,
-} from "@/components/icons";
 import SOCIAL_MEDIA_LINKS from "@/content/social-media";
-import LOGO_FOR_DARK from "@/public/personal/full-white-bg-trans.png";
-import LOGO_FOR_LIGHT from "@/public/personal/full-black-bg-trans.png";
+import FRLink from "./components/fr-link";
 import Logo from "@/components/Logo";
 import Link from "next/link";
 
@@ -160,10 +151,10 @@ const config: DocsThemeConfig = {
     );
   },
   editLink: {
-    text: "Edit this page on GitHub →",
+    text: "Edit this page →",
   },
   feedback: {
-    content: "Question? Give us feedback →",
+    content: "Give us feedback →",
     labels: "feedback",
   },
   sidebar: {
@@ -203,6 +194,7 @@ const config: DocsThemeConfig = {
   },
   toc: {
     backToTop: true,
+    extraContent: [<FRLink key="feature" />],
     // extraContent: (
     //   <img alt="placeholder cat" src="https://placekitten.com/g/300/200" />
     // ),

@@ -9,7 +9,7 @@ import { Url } from "next/dist/shared/lib/router/router";
 type ImageTooltipProps = {
   text: string;
   Icon?: React.FC<SVGProps<SVGSVGElement>>;
-  link: Url;
+  link: string | Url;
   hoverImage?: {
     src: string;
     alt: string;
