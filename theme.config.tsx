@@ -17,7 +17,7 @@ import Link from "next/link";
 
 const logo = (
   <>
-    <Logo name="www.gopx.dev" initials="GV" />
+    <Logo name="old.gopx.dev" initials="GV" />
   </>
 );
 

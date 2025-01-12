@@ -7,12 +7,12 @@ export type SocialProfile = {
 
 const SOCIAL_MEDIA_LINKS: Record<string, SocialProfile> = {
   website: {
-    username: "gopx.dev",
-    link: "https://gopx.dev",
+    username: "old.gopx.dev",
+    link: "https://old.gopx.dev",
   },
   github: {
-    username: "gopx.dev",
-    link: "https://github.com/GopalVerma1303/gopx.dev",
+    username: "GopalVerma1303",
+    link: "https://github.com/GopalVerma1303/old.gopx.dev",
   },
   github_docsRepositoryBase: {
     username: "gopal__verma",
