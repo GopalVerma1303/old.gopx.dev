@@ -31,7 +31,7 @@ const config: DocsThemeConfig = {
     const { asPath } = useRouter();
     if (asPath !== "/") {
       return {
-        titleTemplate: "%s - gopx.dev",
+        titleTemplate: "%s - old.gopx.dev",
       };
     }
   },
@@ -47,8 +47,8 @@ const config: DocsThemeConfig = {
     const description =
       frontMatter.description ||
       "Gopal Verma's devsite for sharing code, blogs and projects!";
-    const siteName = "gopx.dev";
-    const siteUrl = "https://www.gopx.dev";
+    const siteName = "old.gopx.dev";
+    const siteUrl = "https://old.gopx.dev";
 
     return (
       <>
@@ -128,7 +128,7 @@ const config: DocsThemeConfig = {
         {/* Canonical URL */}
         <link rel="canonical" href={`${siteUrl}${route}`} />
 
-        <meta name="apple-mobile-web-app-title" content="gopx.dev" />
+        <meta name="apple-mobile-web-app-title" content="old.gopx.dev" />
         <link rel="icon" href="/favicon.ico" type="image/svg+xml" />
         <link rel="icon" href="/favicon.ico" type="image/png" />
         <link
