@@ -8,7 +8,7 @@ Disallow: /termsconditions
 Disallow: /privacypolicy
 
 # Host
-Host: https://gopx.dev
+Host: https://old.gopx.dev
 
 # Sitemaps
-Sitemap: https://gopx.dev/sitemap.xml
+Sitemap: https://old.gopx.dev/sitemap.xml

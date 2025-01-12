@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 
 module.exports = {
-  siteUrl: "https://gopx.dev",
+  siteUrl: "https://old.gopx.dev",
   changefreq: "daily",
   priority: 1.0,
   sitemapSize: 5000,

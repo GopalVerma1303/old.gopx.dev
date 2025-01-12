@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <rss version="2.0">
     <channel>
-        <title>Gopal Verma | gopx.dev</title>
+        <title>Gopal Verma | old.gopx.dev</title>
         <link>http://localhost:3000</link>
         <description>I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.</description>
-        <lastBuildDate>Sun, 18 Aug 2024 18:37:51 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 12 Jan 2025 14:35:56 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <image>
-            <title>Gopal Verma | gopx.dev</title>
+            <title>Gopal Verma | old.gopx.dev</title>
             <url>http://localhost:3000/logo.png</url>
             <link>http://localhost:3000</link>
         </image>
-        <copyright>All rights reserved 2024, Gopal Verma</copyright>
+        <copyright>All rights reserved 2025, Gopal Verma</copyright>
         <item>
             <title><![CDATA[The End of Junior Engineers]]></title>
             <link>http://localhost:3000/blogs/end-of-je</link>

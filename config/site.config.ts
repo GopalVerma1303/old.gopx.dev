@@ -1,7 +1,7 @@
 import type { Site } from "@/types";
 export const siteConfig: Site = {
-  name: "gopx.dev",
-  title: "Gopal Verma | gopx.dev | 🚀 Building something people want!",
+  name: "old.gopx.dev",
+  title: "Gopal Verma | old.gopx.dev | 🚀 Building something people want!",
   description:
     "I'm Gopal Verma, an indie developer, freelancer, and full-stack developer based in India. I do open-source projects and freelance work.",
   keywords: [
@@ -101,12 +101,12 @@ export const siteConfig: Site = {
     "curated links",
     "resources links",
   ],
-  siteUrl: "https://gopx.dev",
+  siteUrl: "https://old.gopx.dev",
   creator: {
     name: "Gopal Verma",
-    url: "https://gopalverma.vercel.app",
+    url: "https://gopx.dev",
   },
-  ogImage: "https://bettercallgopal.vercel.app/og.jpeg",
+  ogImage: "https://old.gopx.dev/og.jpeg",
   links: {
     x: "https://x.com/bettercallgopal",
     github: "https://github.com/GopalVerma1303",

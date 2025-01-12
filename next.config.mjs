@@ -19,6 +19,7 @@ const nextConfig = {
       "webui-gopx.vercel.app",
       "gopx.dev",
       "www.gopx.dev",
+      "old.gopx.dev",
       "www.codedeployingsquad.tech",
       "media.licdn.com",
       "github.com",
